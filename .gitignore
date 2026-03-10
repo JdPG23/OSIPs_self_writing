@@ -1,0 +1,22 @@
+# Environment
+.env
+__pycache__/
+*.pyc
+
+# Outputs (generated proposals — keep in git optionally)
+# outputs/
+
+# Results log (untracked, like autoresearch)
+results.tsv
+
+# Experiment logs
+run.log
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

@@ -5,6 +5,9 @@ Analogous to the fixed constants in autoresearch's prepare.py.
 
 import os
 from pathlib import Path
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # --- Paths ---
 PROJECT_ROOT = Path(__file__).parent
@@ -55,6 +58,10 @@ REQUIRED_SECTIONS = [
     "Expected Outcomes",
     "Budget Estimate",
 ]
+
+# --- RAG Settings ---
+# Whether to use RAG (Supabase + LlamaIndex) or plain text corpus
+USE_RAG = os.getenv("SUPABASE_DB_URL", "") != ""
 
 # --- Experiment Settings ---
 # Timeout per experiment in seconds

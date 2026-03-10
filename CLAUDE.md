@@ -17,6 +17,14 @@ to find the writing pipeline that produces the highest-scoring ESA proposals.
 # Install dependencies
 pip install -r requirements.txt
 
+# Configure environment
+cp .env.example .env   # then fill in API keys + Supabase URL
+
+# Ingest corpus into Supabase (first time / after corpus changes)
+python scripts/ingest.py
+python scripts/ingest.py --test-query "debris removal"  # ingest + verify
+python scripts/ingest.py --stats  # check document counts without ingesting
+
 # Run single experiment
 python run.py --topic "Your OSIP topic here"
 
@@ -25,7 +33,17 @@ python run.py --topic "Topic" --quick
 
 # Check best score so far
 grep -v "^commit" results.tsv | sort -t$'\t' -k2 -rn | head -5
+
+# Analyze all results
+python scripts/analyze_results.py --table
 ```
+
+## RAG Architecture
+- **LlamaIndex** orchestrates document loading, chunking, and retrieval
+- **Supabase** (pgvector) stores embeddings for semantic search
+- **OpenAI text-embedding-3-small** generates 1536-dim vectors (or HuggingFace bge-small for free)
+- **Claude** (via Anthropic API) generates and scores proposals
+- Pipeline auto-detects: if SUPABASE_DB_URL is set → RAG mode, otherwise → plain text fallback
 
 ## Branching Convention
 - `main` — stable baseline

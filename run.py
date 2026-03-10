@@ -10,7 +10,10 @@ import argparse
 import time
 import sys
 
-from config import EXPERIMENT_TIMEOUT
+from dotenv import load_dotenv
+load_dotenv()
+
+from config import EXPERIMENT_TIMEOUT, USE_RAG
 from pipeline import run_pipeline
 from scorer import score_proposal, quick_score
 from prepare import (
@@ -48,6 +51,7 @@ def main():
     print(f"topic:          {args.topic}")
     print(f"experiment_id:  {experiment_id}")
     print(f"scoring_mode:   {'quick' if args.quick else 'full'}")
+    print(f"rag_mode:       {'supabase+llamaindex' if USE_RAG else 'plain text'}")
     print(f"corpus:         {get_corpus_summary()}")
     print()
 

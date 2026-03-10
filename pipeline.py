@@ -13,6 +13,7 @@ from config import (
     GENERATOR_MODEL,
     DEFAULT_TEMPERATURE,
     MAX_TOKENS_PER_CALL,
+    USE_RAG,
 )
 from llm_client import call_llm
 from prepare import load_corpus
@@ -40,8 +41,12 @@ AGENT_TEMPERATURES = {
     "reviser": 0.5,       # moderate for targeted edits
 }
 
-# Max reference OSIPs to include in context
+# Max reference OSIPs to include in context (plain text fallback)
 MAX_REFERENCE_OSIPS = 3
+
+# RAG retrieval settings (used when USE_RAG=True)
+RAG_CONTEXT_TOP_K = 8       # chunks for general context
+RAG_SIMILAR_OSIPS_TOP_K = 5  # similar implemented OSIPs to retrieve
 
 
 # ---------------------------------------------------------------------------
@@ -144,6 +149,52 @@ def _get_temp(agent_name: str) -> float:
     return t if t is not None else DEFAULT_TEMPERATURE
 
 
+def _build_context_with_rag(topic: str) -> tuple[str, str, str]:
+    """Build context using RAG (semantic search over Supabase).
+
+    Returns (priorities_context, similar_osips_text, rag_context).
+    """
+    from rag import retrieve_context, retrieve_similar_osips
+
+    # Retrieve semantically relevant context for the topic
+    rag_context = retrieve_context(
+        f"ESA OSIP proposal about: {topic}",
+        top_k=RAG_CONTEXT_TOP_K,
+    )
+
+    # Retrieve similar implemented OSIPs
+    similar = retrieve_similar_osips(topic, top_k=RAG_SIMILAR_OSIPS_TOP_K)
+    similar_text = ""
+    if similar:
+        parts = []
+        for osip in similar:
+            score_str = f" (relevance: {osip['score']:.2f})" if osip.get('score') else ""
+            parts.append(
+                f"- **{osip['title']}** — {osip['institution']} ({osip['country']})"
+                f" [{osip['domain']}]{score_str}"
+            )
+        similar_text = "\n".join(parts)
+
+    # Load priorities separately (always useful as full text)
+    corpus = load_corpus()
+    priorities = corpus["priorities"] if USE_FULL_PRIORITIES else corpus["priorities"][:1000]
+
+    return priorities, similar_text, rag_context
+
+
+def _build_context_plain(topic: str) -> tuple[str, str, str]:
+    """Build context using plain text corpus (fallback when no Supabase)."""
+    corpus = load_corpus()
+    priorities = corpus["priorities"] if USE_FULL_PRIORITIES else corpus["priorities"][:1000]
+
+    reference_text = ""
+    for ref in corpus["reference_osips"][:MAX_REFERENCE_OSIPS]:
+        if isinstance(ref, dict) and "content" in ref:
+            reference_text += f"\n---\n{ref['content'][:1500]}\n"
+
+    return priorities, reference_text, ""
+
+
 def run_pipeline(topic: str) -> tuple[str, int]:
     """Execute the full proposal writing pipeline.
 
@@ -153,24 +204,25 @@ def run_pipeline(topic: str) -> tuple[str, int]:
     Returns:
         (proposal_text, total_tokens_used)
     """
-    corpus = load_corpus()
     total_tokens = 0
 
+    # --- Build context (RAG or plain text) ---
+    if USE_RAG:
+        priorities_text, similar_osips, rag_context = _build_context_with_rag(topic)
+    else:
+        priorities_text, similar_osips, rag_context = _build_context_plain(topic)
+
     # --- Step 1: Context Agent ---
-    priorities_text = corpus["priorities"] if USE_FULL_PRIORITIES else corpus["priorities"][:1000]
-
-    reference_text = ""
-    for ref in corpus["reference_osips"][:MAX_REFERENCE_OSIPS]:
-        if isinstance(ref, dict) and "content" in ref:
-            reference_text += f"\n---\n{ref['content'][:1500]}\n"
-
     context_prompt = f"""Topic for OSIP proposal: {topic}
 
 ## ESA Current Priorities
 {priorities_text}
 
-## Reference Successful OSIPs
-{reference_text if reference_text else "No reference OSIPs available."}
+## Similar Implemented OSIPs (from semantic search)
+{similar_osips if similar_osips else "No similar OSIPs found."}
+
+## Additional Relevant Context (RAG)
+{rag_context if rag_context else "No additional context available."}
 
 Produce a focused context briefing for the writing team."""
 

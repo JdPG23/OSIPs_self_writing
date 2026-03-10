@@ -45,27 +45,46 @@ Update this file periodically with the latest from ESA's official publications.
 - **Green propulsion**: Electric propulsion, green propellants
 - **Digital twins**: Mission simulation and operations
 
-## Current OSIP Focus Areas (from recent calls)
+## Current OSIP Focus Areas (from recent calls and 336 implemented ideas 2023-2025)
 
-Based on recent OSIP calls and implemented ideas (2023-2025):
-- VLEO (Very Low Earth Orbit) technologies
+### Hot Topics (highest frequency in implemented OSIPs)
+- **AI/ML/On-Board Computing**: Edge AI, RISC-V, LLMs for space (OrbitGPT, CodexTec), foundation models for EO, neuromorphic AI (~50+ funded)
+- **Advanced Materials & Additive Manufacturing**: Multi-material 3D printing, self-healing composites, regolith processing (~30+ funded)
+- **ISRU / Lunar & Planetary**: Oxygen from regolith, Martian agriculture, metal fuel propellants (~25+ funded)
+- **Life Sciences & Human Spaceflight**: Radiation, cardiovascular, neuro-ocular, biosensors (~20+ funded)
+- **Propulsion**: Detonation engines, water electrolysis thrusters, air-breathing electric, green propellants (~15+ funded)
+
+### Active Campaigns (as of 2025-2026)
+- **GSTP Compendia 2026-2028**: 202 activities across AI (31), Quantum (22), Propulsion (10), Sustainable Space (17), Cybersecurity (10), VLEO (9)
+- **Q-CPR**: Breakthrough quantum sensing technologies
+- **LATTICE**: Large space structure assembly and maintenance
+- **EcoSTAR / CleanCube**: Ecodesign and zero-debris platforms
+- **Circular Economy in Space**: Refurbishment, recycling, orbital reuse
+- **VLEO**: Very Low Earth Orbit technologies
+
+### Evergreen Topics
+- Space debris mitigation and removal
 - On-orbit servicing and manufacturing
-- Space sustainability and circular economy
-- AI for autonomous space operations
-- Quantum technologies for space applications
+- Earth observation transformation
+- Quantum technologies for space
 - Bio-inspired solutions for space
-- Advanced materials and structures
-- Novel propulsion concepts
-- Space-based solar power elements
-- Debris mitigation and removal
+- Space-based solar power
 
-## OSIP Proposal Tips (from successful proposals)
+## OSIP Evaluation Criteria (from ESA)
+
+1. **Primary screening criterion**: Innovation potential (sole criterion at initial gate)
+2. **Full evaluation**: project completion capacity, technical quality, programmatic suitability, risk identification, realistic budgeting
+3. **Panel**: ESA domain experts, typically 3rd Friday of each month
+
+## OSIP Proposal Tips (from 336 successful proposals)
 
 1. **Be specific**: Reference exact ESA missions/programs by name
 2. **State TRL clearly**: Entry TRL and target TRL with justification
-3. **Budget realistically**: 20-100K EUR for studies, 50-175K EUR for tech dev
+3. **Budget realistically**: 20-100K EUR for studies, 90-175K EUR for tech dev
 4. **Show the gap**: What capability is missing and why it matters to ESA
 5. **Differentiate**: What makes this different from existing funded work
 6. **Timeline**: 12-18 months is typical for OSIP activities
-7. **Acronyms work**: Successful OSIPs often have memorable acronyms (PEACE, MISTRAL, ECHO2)
-8. **Spain/ESA connection**: Leverage ESA ESTEC, ESAC, ESRIN proximity if applicable
+7. **Acronyms work**: PEACE, OrbitGPT, EcoSTAR, CleanCube, LATTICE, MorphoComp4D, AirWheel, SpaceHopper
+8. **Title patterns**: Specific technology + application, action-oriented, problem-first, quantified where possible
+9. **Innovation is king**: It's the sole criterion at initial screening — lead with what's new
+10. **See also**: `corpus/domain_themes.md` for full thematic analysis, `corpus/osip_campaigns.md` for active channels

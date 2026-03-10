@@ -1,0 +1,1038 @@
+{
+  "source": "https://www.esa.int/Enabling_Support/Preparing_for_the_Future/Discovery_and_Preparation/Implemented_OSIP_ideas_20252",
+  "fetched_date": "2026-03-10",
+  "total_entries": 96,
+  "sections": [
+    {
+      "channel": "Open Discovery Ideas Channel",
+      "entry_count": 65,
+      "entries": [
+        {
+          "id": 1,
+          "title": "Multi-wavelength analysis of accelerated particles in Solar flares",
+          "institution": "Radboud University",
+          "country": "NL",
+          "country_name": "Netherlands",
+          "month": "January 2025",
+          "domain": "Solar Physics / Heliophysics",
+          "description": "Research on multi-wavelength analysis of particle acceleration in solar flare events."
+        },
+        {
+          "id": 2,
+          "title": "MorphoComp4D",
+          "institution": "Universite Bretagne-Sud",
+          "country": "FR",
+          "country_name": "France",
+          "month": "January 2025",
+          "domain": "Advanced Materials / Composites",
+          "description": "4D morphing composite materials research."
+        },
+        {
+          "id": 3,
+          "title": "Ender Debris Mission: creating a commercial Business Case for Small Debris remediation, and preparing the path for Space Circular Economy",
+          "institution": "Thales Alenia Space Espana",
+          "country": "ES",
+          "country_name": "Spain",
+          "month": "January 2025",
+          "domain": "Space Debris / Circular Economy",
+          "description": "Developing a commercial business case for small debris remediation and enabling the space circular economy."
+        },
+        {
+          "id": 4,
+          "title": "Assessment of a new manufacturing concept for improved Rhenium/Iridium thruster nozzles",
+          "institution": "RHP-Technology GMBH",
+          "country": "AT",
+          "country_name": "Austria",
+          "month": "January 2025",
+          "domain": "Propulsion / Manufacturing",
+          "description": "Assessing new manufacturing concepts for improved Rhenium/Iridium thruster nozzles."
+        },
+        {
+          "id": 5,
+          "title": "BRAVE: Bridging the gap between Robust and dAta-driVen control prototypE for launchers",
+          "institution": "DEIMOS Engenharia S.A.",
+          "country": "PT",
+          "country_name": "Portugal",
+          "month": "January 2025",
+          "domain": "GNC / Launcher Control",
+          "description": "Bridging robust and data-driven control approaches for launcher guidance, navigation, and control."
+        },
+        {
+          "id": 6,
+          "title": "Streamlined Multi-DOF Actuation for Cost-Effective, High-Performance Fast Steering Mirrors",
+          "institution": "KOSMIA SARL",
+          "country": "CH",
+          "country_name": "Switzerland",
+          "month": "January 2025",
+          "domain": "Optics / Mechanisms",
+          "description": "Multi-degree-of-freedom actuation for cost-effective, high-performance fast steering mirrors."
+        },
+        {
+          "id": 7,
+          "title": "Carbon fluoride as cathode for high energy density primary lithium batteries",
+          "institution": "UCA Universite Clermont Auvergne",
+          "country": "FR",
+          "country_name": "France",
+          "month": "January 2025",
+          "domain": "Power / Energy Storage",
+          "description": "Developing carbon fluoride cathodes for high energy density primary lithium batteries for space applications."
+        },
+        {
+          "id": 8,
+          "title": "Qualifying ABD-900AM in closedloop LPBF additive manufacturing systems for aerospace applications",
+          "institution": "Alloyed Limited",
+          "country": "UK",
+          "country_name": "United Kingdom",
+          "month": "January 2025",
+          "domain": "Additive Manufacturing / Materials",
+          "description": "Qualifying ABD-900AM alloy in closed-loop laser powder bed fusion additive manufacturing for aerospace."
+        },
+        {
+          "id": 9,
+          "title": "Development of a quality factor model for space radiation and manned space missions",
+          "institution": "University of Ioannina",
+          "country": "GR",
+          "country_name": "Greece",
+          "month": "February 2025",
+          "domain": "Radiation / Human Spaceflight",
+          "description": "Developing quality factor models for space radiation in the context of manned space missions."
+        },
+        {
+          "id": 10,
+          "title": "Multipactor critical gap localization using radiofrequency amplitude and phase information",
+          "institution": "Universitat Politecnica de Valencia",
+          "country": "ES",
+          "country_name": "Spain",
+          "month": "February 2025",
+          "domain": "RF Engineering / Telecommunications",
+          "description": "Localizing multipactor critical gaps using RF amplitude and phase information."
+        },
+        {
+          "id": 11,
+          "title": "Qualifying ABD-900AM in closedloop LPBF additive manufacturing systems for aerospace applications",
+          "institution": "Alloyed Limited",
+          "country": "UK",
+          "country_name": "United Kingdom",
+          "month": "February 2025",
+          "domain": "Additive Manufacturing / Materials",
+          "description": "Qualifying ABD-900AM alloy in closed-loop LPBF additive manufacturing for aerospace (duplicate entry on source page, possibly a second phase or contract).",
+          "note": "Duplicate title from January 2025 entry; listed separately on ESA source page"
+        },
+        {
+          "id": 12,
+          "title": "Space Robotics System-Level Analysis for De-Risking Debris Removal and In-Orbit Servicing Missions",
+          "institution": "CSEM SA - Centre Suisse d'Electronique et de Microtechnique SA",
+          "country": "CH",
+          "country_name": "Switzerland",
+          "month": "February 2025",
+          "domain": "Robotics / In-Orbit Servicing",
+          "description": "System-level robotics analysis to de-risk debris removal and in-orbit servicing missions."
+        },
+        {
+          "id": 13,
+          "title": "Flexible solar array for LEO constellations",
+          "institution": "Airbus Netherlands B.V.",
+          "country": "NL",
+          "country_name": "Netherlands",
+          "month": "February 2025",
+          "domain": "Power / Solar Arrays",
+          "description": "Development of flexible solar arrays optimized for LEO constellation platforms."
+        },
+        {
+          "id": 14,
+          "title": "A Full Ku/Ka-band (13-30GHz) Symmetric Beamformer IC for Ultra-Compact Multi-Beam Operation",
+          "institution": "Eidgenossische Technische Hochschule Zurich - ETH Zurich",
+          "country": "CH",
+          "country_name": "Switzerland",
+          "month": "February 2025",
+          "domain": "Telecommunications / RF Microelectronics",
+          "description": "Full Ku/Ka-band symmetric beamformer integrated circuit for ultra-compact multi-beam satellite operation."
+        },
+        {
+          "id": 15,
+          "title": "Chip-integrable entangled-photon generation through spontaneous four-wave mixing for satellite-mediated quantum networks",
+          "institution": "Quantopticon",
+          "country": "UK",
+          "country_name": "United Kingdom",
+          "month": "March 2025",
+          "domain": "Quantum Technologies / Photonics",
+          "description": "Chip-integrable entangled-photon generation via spontaneous four-wave mixing for satellite quantum networks."
+        },
+        {
+          "id": 16,
+          "title": "Deciphering compound rain-on-snow flood pathways as observed from satellites",
+          "institution": "Politecnico di Milano",
+          "country": "IT",
+          "country_name": "Italy",
+          "month": "March 2025",
+          "domain": "Earth Observation / Hydrology",
+          "description": "Satellite-based analysis of compound rain-on-snow flood pathways."
+        },
+        {
+          "id": 17,
+          "title": "Deep Sintering of lunar regolith simulants",
+          "institution": "Technische Universitat Berlin",
+          "country": "DE",
+          "country_name": "Germany",
+          "month": "March 2025",
+          "domain": "ISRU / Lunar Exploration",
+          "description": "Deep sintering processes for lunar regolith simulants in support of in-situ resource utilization."
+        },
+        {
+          "id": 18,
+          "title": "Contribution of NGGM/MAGIC mass monitoring missions to the representation of water, energy and carbon cycles in land surface assimilation systems",
+          "institution": "University of Bonn",
+          "country": "DE",
+          "country_name": "Germany",
+          "month": "March 2025",
+          "domain": "Earth Observation / Geodesy",
+          "description": "Studying the contribution of next-generation gravity missions (NGGM/MAGIC) to water, energy, and carbon cycle modeling."
+        },
+        {
+          "id": 19,
+          "title": "ROBODRESS - ROBOtic Construction with Found Materials: Rock DRESSing via Breaking and Reshaping",
+          "institution": "Eidgenossische Technische Hochschule Zurich - ETH Zurich",
+          "country": "CH",
+          "country_name": "Switzerland",
+          "month": "March 2025",
+          "domain": "Robotics / ISRU / Construction",
+          "description": "Robotic construction using found materials through rock dressing, breaking, and reshaping techniques."
+        },
+        {
+          "id": 20,
+          "title": "Demise by design - enhancing the heat fluxes to spacecraft equipment by utilising shape effects to achieve particular flow phenomena",
+          "institution": "Belstead Research Limited",
+          "country": "UK",
+          "country_name": "United Kingdom",
+          "month": "April 2025",
+          "domain": "Re-entry / Clean Space / Thermal",
+          "description": "Designing spacecraft equipment for controlled demise during re-entry by enhancing heat fluxes through shape effects."
+        },
+        {
+          "id": 21,
+          "title": "3D-printed smart damping components for aerospace applications",
+          "institution": "University of Twente",
+          "country": "NL",
+          "country_name": "Netherlands",
+          "month": "April 2025",
+          "domain": "Additive Manufacturing / Structures",
+          "description": "Development of 3D-printed smart damping components for aerospace vibration control."
+        },
+        {
+          "id": 22,
+          "title": "Beneficiation and Extraction Strategies to Enable Urine-Based Plant Fertilizers",
+          "institution": "Solsys Mining",
+          "country": "NO",
+          "country_name": "Norway",
+          "month": "April 2025",
+          "domain": "Life Support / ISRU",
+          "description": "Strategies for extracting and beneficiating urine-based fertilizers for plant growth in space habitats."
+        },
+        {
+          "id": 23,
+          "title": "SPARK. Advanced Packaging for Scalable THz Radiometry",
+          "institution": "TeraSi AB",
+          "country": "SE",
+          "country_name": "Sweden",
+          "month": "April 2025",
+          "domain": "Instruments / THz Technology",
+          "description": "Advanced packaging solutions for scalable terahertz radiometry instruments."
+        },
+        {
+          "id": 24,
+          "title": "Wireless structural health monitoring of lightweight additively manufactured aluminum with multifunctional aerospace properties (WISH)",
+          "institution": "BCMaterials, Basque Center for Materials, Applications and Nanostructures",
+          "country": "ES",
+          "country_name": "Spain",
+          "month": "May 2025",
+          "domain": "Structural Health Monitoring / Materials",
+          "description": "Wireless structural health monitoring for lightweight additively manufactured aluminum with aerospace properties."
+        },
+        {
+          "id": 25,
+          "title": "Utilisation of the Martian atmospheric gases for collection, transport and beneficiation of regolith - Aeolis",
+          "institution": "DLR - German Aerospace Center",
+          "country": "DE",
+          "country_name": "Germany",
+          "month": "May 2025",
+          "domain": "ISRU / Mars Exploration",
+          "description": "Using Martian atmospheric gases for regolith collection, transport, and beneficiation."
+        },
+        {
+          "id": 26,
+          "title": "Boosting Space Travel with Predictable, High-Efficiency Detonation Engines",
+          "institution": "Romanian Research and Development Institute for Gas Turbines COMOTI",
+          "country": "RO",
+          "country_name": "Romania",
+          "month": "May 2025",
+          "domain": "Propulsion / Detonation Engines",
+          "description": "Developing predictable, high-efficiency detonation engines for space travel."
+        },
+        {
+          "id": 27,
+          "title": "Modernizing planetary protection toolkits: enabling the new era for space exploration",
+          "institution": "Medical University of Graz",
+          "country": "AT",
+          "country_name": "Austria",
+          "month": "June 2025",
+          "domain": "Planetary Protection / Astrobiology",
+          "description": "Modernizing planetary protection toolkits for the next era of space exploration missions."
+        },
+        {
+          "id": 28,
+          "title": "PERSEO - A Percolation Theory of the Space Environment",
+          "institution": "University of Strathclyde",
+          "country": "UK",
+          "country_name": "United Kingdom",
+          "month": "June 2025",
+          "domain": "Space Environment / Space Safety",
+          "description": "Applying percolation theory to model and understand the space environment."
+        },
+        {
+          "id": 29,
+          "title": "Metallic microstructures design via conditional diffusion on graph representations",
+          "institution": "TU Delft",
+          "country": "NL",
+          "country_name": "Netherlands",
+          "month": "June 2025",
+          "domain": "Materials / AI-Driven Design",
+          "description": "Designing metallic microstructures using conditional diffusion models on graph representations."
+        },
+        {
+          "id": 30,
+          "title": "Thrust Vector Control and Adaptive Throttling in Aerospike Engines via Controlled Inner Core Displacement",
+          "institution": "Romanian Research and Development Institute for Gas Turbines COMOTI",
+          "country": "RO",
+          "country_name": "Romania",
+          "month": "June 2025",
+          "domain": "Propulsion / Aerospike Engines",
+          "description": "Thrust vector control and adaptive throttling for aerospike engines through controlled inner core displacement."
+        },
+        {
+          "id": 31,
+          "title": "Study of Opportunities for Elastocaloric Cooling and Heating Technology in Space Applications - SPACECOOL",
+          "institution": "University of Ljubljana - Faculty of Mechanical Engineering",
+          "country": "SI",
+          "country_name": "Slovenia",
+          "month": "June 2025",
+          "domain": "Thermal / Cooling Technology",
+          "description": "Investigating elastocaloric cooling and heating technology for space applications."
+        },
+        {
+          "id": 32,
+          "title": "Development of a miniaturized optical biosensor device with interchangeable probe sensors for monitoring astronaut health, microbiological status, and cancer biomarkers in space",
+          "institution": "SDS Optic",
+          "country": "PL",
+          "country_name": "Poland",
+          "month": "June 2025",
+          "domain": "Life Sciences / Biosensors",
+          "description": "Miniaturized optical biosensor for monitoring astronaut health, microbiological status, and cancer biomarkers."
+        },
+        {
+          "id": 33,
+          "title": "Risk map for the Spaceflight Associated Neuro-ocular Syndrome (SANS) through cardiovascular digital twins",
+          "institution": "Politecnico di Torino",
+          "country": "IT",
+          "country_name": "Italy",
+          "month": "June 2025",
+          "domain": "Life Sciences / Digital Twins",
+          "description": "Creating risk maps for Spaceflight Associated Neuro-ocular Syndrome using cardiovascular digital twin models."
+        },
+        {
+          "id": 34,
+          "title": "Nanoparticle Coatings to Mitigate the Multipactor Effect in High-Frequency Devices [NanoMitigate]",
+          "institution": "Nanostine S.L.",
+          "country": "ES",
+          "country_name": "Spain",
+          "month": "July 2025",
+          "domain": "RF Engineering / Nanotechnology",
+          "description": "Using nanoparticle coatings to mitigate the multipactor effect in high-frequency space devices."
+        },
+        {
+          "id": 35,
+          "title": "Satellite As A Service Marketplace - from Europe to the world: making satellites more valuable",
+          "institution": "Parsimoni",
+          "country": "FR",
+          "country_name": "France",
+          "month": "July 2025",
+          "domain": "Space Economy / Platform Services",
+          "description": "Creating a satellite-as-a-service marketplace to increase the value of European satellite assets."
+        },
+        {
+          "id": 36,
+          "title": "Extreme temperature cycling of perovskite solar cells for space applications",
+          "institution": "University of Stuttgart",
+          "country": "DE",
+          "country_name": "Germany",
+          "month": "July 2025",
+          "domain": "Power / Photovoltaics",
+          "description": "Testing perovskite solar cells under extreme temperature cycling conditions for space applications."
+        },
+        {
+          "id": 37,
+          "title": "Schottky-diode based SP2T Switches in Waveguide Technology",
+          "institution": "ACST GMBH",
+          "country": "DE",
+          "country_name": "Germany",
+          "month": "July 2025",
+          "domain": "RF Components / Microwave Technology",
+          "description": "Developing Schottky-diode based SP2T switches in waveguide technology for space RF systems."
+        },
+        {
+          "id": 38,
+          "title": "Encouraging social interaction via ambient intelligence in extreme environments (AmI-EE): Studying the benefits of smart habitats for the crew",
+          "institution": "Darmstadt University of Applied Sciences",
+          "country": "DE",
+          "country_name": "Germany",
+          "month": "August 2025",
+          "domain": "Human Spaceflight / Habitation",
+          "description": "Studying ambient intelligence for encouraging social interaction in extreme space environments."
+        },
+        {
+          "id": 39,
+          "title": "Determining maximal metabolic parameters from submaximal assessments using deep learning",
+          "institution": "Splendo Health B.V.",
+          "country": "NL",
+          "country_name": "Netherlands",
+          "month": "August 2025",
+          "domain": "Life Sciences / AI-Health",
+          "description": "Using deep learning to determine maximal metabolic parameters from submaximal exercise assessments."
+        },
+        {
+          "id": 40,
+          "title": "IRIS - impact Risk for lunar InfraStructure - a Hazard Analysis from eroding mass fluxes",
+          "institution": "Museum fur Naturkunde Leibniz-Institut",
+          "country": "DE",
+          "country_name": "Germany",
+          "month": "August 2025",
+          "domain": "Lunar Exploration / Risk Assessment",
+          "description": "Hazard analysis of impact risk for lunar infrastructure from eroding mass fluxes."
+        },
+        {
+          "id": 41,
+          "title": "Flexible Ceramizable Ablators for Inflatable and Origami Expandable Aeroshells",
+          "institution": "Lodz University of Technology",
+          "country": "PL",
+          "country_name": "Poland",
+          "month": "August 2025",
+          "domain": "Thermal Protection / Re-entry",
+          "description": "Developing flexible ceramizable ablators for inflatable and origami expandable aeroshells."
+        },
+        {
+          "id": 42,
+          "title": "New reliable and efficient waveform for SatCom and LEO/CubeSat networks",
+          "institution": "DWAVE S.R.L.",
+          "country": "IT",
+          "country_name": "Italy",
+          "month": "August 2025",
+          "domain": "Telecommunications / Waveform Design",
+          "description": "Developing new reliable and efficient waveforms for SatCom and LEO/CubeSat networks."
+        },
+        {
+          "id": 43,
+          "title": "2nd generation of carbon fluoride as cathode for high energy density primary lithium batteries",
+          "institution": "Clermont Auvergne University",
+          "country": "FR",
+          "country_name": "France",
+          "month": "August 2025",
+          "domain": "Power / Energy Storage",
+          "description": "Second generation development of carbon fluoride cathodes for high energy density lithium batteries."
+        },
+        {
+          "id": 44,
+          "title": "Modular deployable large space tensegrity structures (MD-LaSTS)",
+          "institution": "University of Manchester",
+          "country": "UK",
+          "country_name": "United Kingdom",
+          "month": "August 2025",
+          "domain": "Structures / Deployable Systems",
+          "description": "Research on modular deployable large space tensegrity structures."
+        },
+        {
+          "id": 45,
+          "title": "Grasping rover for advanced in-orbit inspection (GRAsp)",
+          "institution": "University of Manchester",
+          "country": "UK",
+          "country_name": "United Kingdom",
+          "month": "August 2025",
+          "domain": "Robotics / In-Orbit Inspection",
+          "description": "Development of a grasping rover for advanced in-orbit inspection capabilities."
+        },
+        {
+          "id": 46,
+          "title": "On board robust and efficient adaptive digital beamforming optimized in SINR for GEO satellite or LEO constellations capacity improvement",
+          "institution": "Thales Alenia Space France SAS",
+          "country": "FR",
+          "country_name": "France",
+          "month": "August 2025",
+          "domain": "Telecommunications / Beamforming",
+          "description": "Onboard adaptive digital beamforming optimized for SINR to improve GEO/LEO constellation capacity."
+        },
+        {
+          "id": 47,
+          "title": "Advancing Digital Twin Infrastructures for Lunar Analogue Studies and Remote Collaboration",
+          "institution": "Fraunhofer-Gesellschaft",
+          "country": "DE",
+          "country_name": "Germany",
+          "month": "September 2025",
+          "domain": "Digital Twins / Lunar Exploration",
+          "description": "Advancing digital twin infrastructure for lunar analogue studies and enabling remote collaboration."
+        },
+        {
+          "id": 48,
+          "title": "New Gamma-less Sr-90 Radioisotope Fuel Composition for European Radioisotope Power Source",
+          "institution": "Deep Space Energy, SIA",
+          "country": "LV",
+          "country_name": "Latvia",
+          "month": "September 2025",
+          "domain": "Power / Radioisotope Power",
+          "description": "Developing a new gamma-less Sr-90 radioisotope fuel composition for European radioisotope power sources."
+        },
+        {
+          "id": 49,
+          "title": "Regolith to Repairs: ISRU for Additive Manufacturing of Electronics",
+          "institution": "Danish Technological Institute",
+          "country": "DK",
+          "country_name": "Denmark",
+          "month": "September 2025",
+          "domain": "ISRU / Additive Manufacturing",
+          "description": "Using in-situ resource utilization from regolith for additive manufacturing of electronics."
+        },
+        {
+          "id": 50,
+          "title": "Transforming the Low-Cost Satcom Market: Single-Aperture Plastic Antennas for K/Ka Band Connectivity",
+          "institution": "Planexus",
+          "country": "FR",
+          "country_name": "France",
+          "month": "September 2025",
+          "domain": "Telecommunications / Antenna Technology",
+          "description": "Single-aperture plastic antennas for K/Ka band connectivity to transform the low-cost SatCom market."
+        },
+        {
+          "id": 51,
+          "title": "Scanner Camera (ScanCam) for Earth Observation",
+          "institution": "IDOM, Consulting, Engineering, Architecture, SAU",
+          "country": "ES",
+          "country_name": "Spain",
+          "month": "September 2025",
+          "domain": "Earth Observation / Instruments",
+          "description": "Development of a scanner camera instrument for Earth observation."
+        },
+        {
+          "id": 52,
+          "title": "Investigating Hardware Security in next-generation Space RISC-V Processors",
+          "institution": "IONION S.R.L.",
+          "country": "IT",
+          "country_name": "Italy",
+          "month": "September 2025",
+          "domain": "On-Board Computing / Cybersecurity",
+          "description": "Investigating hardware security aspects of next-generation RISC-V processors for space."
+        },
+        {
+          "id": 53,
+          "title": "Development of a novel sensor for measuring electron energisation in space plasmas",
+          "institution": "Northumbria University",
+          "country": "UK",
+          "country_name": "United Kingdom",
+          "month": "September 2025",
+          "domain": "Instruments / Space Plasma Physics",
+          "description": "Developing a novel sensor for measuring electron energisation in space plasma environments."
+        },
+        {
+          "id": 54,
+          "title": "RadioBiome - Host-Gut Microbiome Functional Resilience and Susceptibility to Radiation",
+          "institution": "University College Dublin",
+          "country": "IE",
+          "country_name": "Ireland",
+          "month": "September 2025",
+          "domain": "Life Sciences / Radiation Biology",
+          "description": "Studying host-gut microbiome functional resilience and susceptibility to radiation in space."
+        },
+        {
+          "id": 55,
+          "title": "Transition metal-based Prussian blue analogues for high-voltage proton batteries (HI-PRO)",
+          "institution": "Istituto Italiano di Tecnologia",
+          "country": "IT",
+          "country_name": "Italy",
+          "month": "September 2025",
+          "domain": "Power / Energy Storage",
+          "description": "Developing transition metal-based Prussian blue analogues for high-voltage proton batteries."
+        },
+        {
+          "id": 56,
+          "title": "High-speed Imaging of Micrometeorites and Space Debris",
+          "institution": "University of Bern",
+          "country": "CH",
+          "country_name": "Switzerland",
+          "month": "October 2025",
+          "domain": "Space Debris / Instrumentation",
+          "description": "High-speed imaging techniques for micrometeorite and space debris characterization."
+        },
+        {
+          "id": 57,
+          "title": "Smart obstacle technologies for reusable vehicles extending their life-cycle time",
+          "institution": "ONERA",
+          "country": "FR",
+          "country_name": "France",
+          "month": "October 2025",
+          "domain": "Reusable Launch Vehicles / Thermal Protection",
+          "description": "Smart obstacle technologies to extend the life-cycle time of reusable launch vehicles."
+        },
+        {
+          "id": 58,
+          "title": "QUantum-enhanced weArable Sensing for Active Radiation Monitoring - QUASAR",
+          "institution": "Universite libre de Bruxelles",
+          "country": "BE",
+          "country_name": "Belgium",
+          "month": "October 2025",
+          "domain": "Quantum Sensing / Radiation Monitoring",
+          "description": "Quantum-enhanced wearable sensing technology for active radiation monitoring in space."
+        },
+        {
+          "id": 59,
+          "title": "NIR Photon number resolved sensors for direct Exoplanet detection",
+          "institution": "University of Applied Sciences Wiener Neustadt",
+          "country": "AT",
+          "country_name": "Austria",
+          "month": "October 2025",
+          "domain": "Instruments / Exoplanet Detection",
+          "description": "Near-infrared photon number resolved sensors for direct exoplanet detection."
+        },
+        {
+          "id": 60,
+          "title": "Experimental characterization of Enceladus' environment: from plumes to surface",
+          "institution": "Delft University of Technology",
+          "country": "NL",
+          "country_name": "Netherlands",
+          "month": "October 2025",
+          "domain": "Planetary Science / Enceladus",
+          "description": "Experimental characterization of Enceladus' environment from plumes to surface."
+        },
+        {
+          "id": 61,
+          "title": "Advanced cage design to reduce microvibrations in space-grade ball bearings",
+          "institution": "APO-GEE Engineering srl",
+          "country": "BE",
+          "country_name": "Belgium",
+          "month": "October 2025",
+          "domain": "Mechanisms / Microvibration",
+          "description": "Advanced cage designs to reduce microvibrations in space-grade ball bearings."
+        },
+        {
+          "id": 62,
+          "title": "Transforming metal fumes from a contamination challenge into a Quality Control tool for In-Orbit Manufacturing processes",
+          "institution": "ArcSpace SAS",
+          "country": "FR",
+          "country_name": "France",
+          "month": "October 2025",
+          "domain": "In-Orbit Manufacturing / Quality Control",
+          "description": "Transforming metal fume contamination into a quality control tool for in-orbit manufacturing."
+        },
+        {
+          "id": 63,
+          "title": "Reliable and Energy-Efficient RISC-V Vector-Matrix Processor for On-Board Execution of Small Language Models in Space",
+          "institution": "University Bologna Alma Mater Studiorum",
+          "country": "IT",
+          "country_name": "Italy",
+          "month": "October 2025",
+          "domain": "On-Board Computing / AI",
+          "description": "Energy-efficient RISC-V processor for executing small language models onboard spacecraft."
+        },
+        {
+          "id": 64,
+          "title": "Hybrid electric geared turbopump for reusable rockets",
+          "institution": "Romanian Research and Development Institute for Gas Turbines COMOTI",
+          "country": "RO",
+          "country_name": "Romania",
+          "month": "October 2025",
+          "domain": "Propulsion / Reusable Launch Vehicles",
+          "description": "Hybrid electric geared turbopump design for reusable rocket engines."
+        },
+        {
+          "id": 65,
+          "title": "BeSAFE (Balloon-borne Space debris Aerosol Fetching Experiment)",
+          "institution": "CNRS",
+          "country": "FR",
+          "country_name": "France",
+          "month": "October 2025",
+          "domain": "Space Debris / Atmospheric Science",
+          "description": "Balloon-borne experiment for fetching and studying space debris aerosol particles."
+        }
+      ]
+    },
+    {
+      "channel": "CleanCube: Zero Debris for CubeSat Platforms",
+      "entry_count": 5,
+      "entries": [
+        {
+          "id": 66,
+          "title": "Sustainable platform integrating Hazard Intervention, End-of-life management and Debris avoidance (SHIELD)",
+          "institution": "AIKO SRL",
+          "country": "IT",
+          "country_name": "Italy",
+          "month": "January 2025",
+          "domain": "Space Debris / CubeSat Sustainability",
+          "description": "Sustainable CubeSat platform integrating hazard intervention, end-of-life management, and debris avoidance."
+        },
+        {
+          "id": 67,
+          "title": "SPACEKEEPERS",
+          "institution": "GMV Aerospace and Defence S.A.",
+          "country": "ES",
+          "country_name": "Spain",
+          "month": "January 2025",
+          "domain": "Space Debris / CubeSat Operations",
+          "description": "CubeSat debris mitigation and space sustainability solution."
+        },
+        {
+          "id": 68,
+          "title": "CleanCube: Enabling Sustainable CubeSats Platforms in VLEO with Modular Plug-and-Play AirBreathing Electric Propulsion Systems",
+          "institution": "Stellar Space Industries",
+          "country": "NL",
+          "country_name": "Netherlands",
+          "month": "January 2025",
+          "domain": "Propulsion / CubeSat / VLEO",
+          "description": "Modular plug-and-play air-breathing electric propulsion for sustainable CubeSat platforms in VLEO."
+        },
+        {
+          "id": 69,
+          "title": "CleanCube - TidyCube",
+          "institution": "ISISpace Group",
+          "country": "NL",
+          "country_name": "Netherlands",
+          "month": "January 2025",
+          "domain": "Space Debris / CubeSat Deorbiting",
+          "description": "CubeSat deorbiting and debris mitigation solution."
+        },
+        {
+          "id": 70,
+          "title": "Charon: a fully independent Coulomb Drag-based system to deorbit CubeSats after failure or dead-on-arrival",
+          "institution": "Aurora Propulsion Technologies Oy",
+          "country": "FI",
+          "country_name": "Finland",
+          "month": "January 2025",
+          "domain": "Space Debris / CubeSat Deorbiting",
+          "description": "Fully independent Coulomb drag-based deorbiting system for failed or dead-on-arrival CubeSats."
+        }
+      ]
+    },
+    {
+      "channel": "EcoSTAR: An Ecodesigned Platform SysNova Campaign",
+      "entry_count": 5,
+      "entries": [
+        {
+          "id": 71,
+          "title": "IT-SHINES: Innovative Technologies for Sustainable Horizons in Impactful and Next-generation Earth-orbiting",
+          "institution": "New Horizon Srl",
+          "country": "IT",
+          "country_name": "Italy",
+          "month": "March 2025",
+          "domain": "Ecodesign / Sustainable Platforms",
+          "description": "Innovative technologies for sustainable next-generation Earth-orbiting platforms."
+        },
+        {
+          "id": 72,
+          "title": "ECOSAT (Environmentally Conscious Optimization of Satellite Technologies)",
+          "institution": "DEIMOS Engineering and Systems SLU",
+          "country": "ES",
+          "country_name": "Spain",
+          "month": "March 2025",
+          "domain": "Ecodesign / Satellite Optimization",
+          "description": "Environmentally conscious optimization of satellite technologies."
+        },
+        {
+          "id": 73,
+          "title": "Sustainable Satellites: Air-Breathing Propulsion for Low-Latency, Eco-Friendly Global 5G Connectivity",
+          "institution": "IT - Instituto de Telecomunicacoes",
+          "country": "PT",
+          "country_name": "Portugal",
+          "month": "March 2025",
+          "domain": "Propulsion / Telecommunications / Sustainability",
+          "description": "Air-breathing propulsion for eco-friendly satellite platforms providing low-latency global 5G connectivity."
+        },
+        {
+          "id": 74,
+          "title": "GreenGuard",
+          "institution": "Redwire Space NV",
+          "country": "BE",
+          "country_name": "Belgium",
+          "month": "March 2025",
+          "domain": "Ecodesign / Sustainable Platforms",
+          "description": "Ecodesigned satellite platform solution."
+        },
+        {
+          "id": 75,
+          "title": "Triton-E5 - EcoSTAR",
+          "institution": "LuxSpace Sarl",
+          "country": "LU",
+          "country_name": "Luxembourg",
+          "month": "March 2025",
+          "domain": "Ecodesign / Platform Design",
+          "description": "Ecodesigned satellite platform under the EcoSTAR campaign."
+        }
+      ]
+    },
+    {
+      "channel": "Large Space Structure Campaign (LATTICE)",
+      "entry_count": 11,
+      "entries": [
+        {
+          "id": 76,
+          "title": "B4LSS - In Space Bonding to Assemble, Repair and Maintain Large Space Structures",
+          "institution": "Munich University of Applied Sciences (HM)",
+          "country": "DE",
+          "country_name": "Germany",
+          "month": "March 2025",
+          "domain": "In-Orbit Assembly / Structures",
+          "description": "In-space bonding techniques to assemble, repair, and maintain large space structures."
+        },
+        {
+          "id": 77,
+          "title": "SpaceAlign: Trustworthy Robotics for Large Space Structures",
+          "institution": "Danish Technological Institute",
+          "country": "DK",
+          "country_name": "Denmark",
+          "month": "March 2025",
+          "domain": "Robotics / In-Orbit Assembly",
+          "description": "Trustworthy robotic systems for assembly and alignment of large space structures."
+        },
+        {
+          "id": 78,
+          "title": "Dynamic Property Estimation and Control of Large Space Structures During In-Space Assembly",
+          "institution": "University of Northumbria at Newcastle",
+          "country": "UK",
+          "country_name": "United Kingdom",
+          "month": "March 2025",
+          "domain": "GNC / Structural Dynamics",
+          "description": "Estimating and controlling dynamic properties of large space structures during in-space assembly."
+        },
+        {
+          "id": 79,
+          "title": "REALISE2 - Robotics-Enabled Assembly of Large In-Orbit Structures with Embedded Electronics",
+          "institution": "University of Trieste",
+          "country": "IT",
+          "country_name": "Italy",
+          "month": "March 2025",
+          "domain": "Robotics / In-Orbit Assembly / Electronics",
+          "description": "Robotics-enabled assembly of large in-orbit structures incorporating embedded electronics."
+        },
+        {
+          "id": 80,
+          "title": "SKYWALKER: Safe Reinforcement Learning for Multi-Step Robotic Crawling and Navigation on Large Space Structures",
+          "institution": "Aalborg University",
+          "country": "DK",
+          "country_name": "Denmark",
+          "month": "March 2025",
+          "domain": "AI / Robotics / In-Orbit Assembly",
+          "description": "Safe reinforcement learning for multi-step robotic crawling and navigation on large space structures."
+        },
+        {
+          "id": 81,
+          "title": "Optimised Structure, Targeted, Assembly using, Robots with Reinforcement Learning (OSTAR-RL)",
+          "institution": "Satellite Applications Catapult",
+          "country": "UK",
+          "country_name": "United Kingdom",
+          "month": "March 2025",
+          "domain": "AI / Robotics / In-Orbit Assembly",
+          "description": "Optimized structure targeted assembly using robots with reinforcement learning."
+        },
+        {
+          "id": 82,
+          "title": "LOFT: Loose Fit Clamp Technique for Assembly of Large Space Structures",
+          "institution": "Satellite Applications Catapult",
+          "country": "UK",
+          "country_name": "United Kingdom",
+          "month": "April 2025",
+          "domain": "Mechanisms / In-Orbit Assembly",
+          "description": "Loose fit clamp technique for the assembly of large space structures."
+        },
+        {
+          "id": 83,
+          "title": "Intelligent TSN Interfaces Aggregator",
+          "institution": "ITTI",
+          "country": "PL",
+          "country_name": "Poland",
+          "month": "April 2025",
+          "domain": "Communications / Time-Sensitive Networking",
+          "description": "Intelligent time-sensitive networking interfaces aggregator for large space structure communications."
+        },
+        {
+          "id": 84,
+          "title": "ShearScope - Towards passive shearography for on-orbit non-destructive inspection",
+          "institution": "TU Delft",
+          "country": "NL",
+          "country_name": "Netherlands",
+          "month": "April 2025",
+          "domain": "Non-Destructive Inspection / In-Orbit Servicing",
+          "description": "Passive shearography for on-orbit non-destructive inspection of space structures."
+        },
+        {
+          "id": 85,
+          "title": "ECHO2: End-to-End Control for Handling Operations in Orbit",
+          "institution": "University of Malaga",
+          "country": "ES",
+          "country_name": "Spain",
+          "month": "May 2025",
+          "domain": "Robotics / GNC / In-Orbit Operations",
+          "description": "End-to-end control systems for handling operations in orbit."
+        },
+        {
+          "id": 86,
+          "title": "Innovative Modelling, in-situ Identification and active Control methods for In-Orbit Manufacturing, Assembly and Operation of large antennas (MICIOMAO)",
+          "institution": "ISAE-SUPAERO",
+          "country": "FR",
+          "country_name": "France",
+          "month": "May 2025",
+          "domain": "GNC / In-Orbit Manufacturing / Antennas",
+          "description": "Innovative modelling, in-situ identification, and active control for in-orbit manufacturing and assembly of large antennas."
+        }
+      ]
+    },
+    {
+      "channel": "System Studies for the Circular Economy in Space",
+      "entry_count": 2,
+      "entries": [
+        {
+          "id": 87,
+          "title": "Towards a Circular Space Economy: Satellite Refurbishment and Upgrading Services for Orbital Sustainability",
+          "institution": "Astroscale Ltd",
+          "country": "UK",
+          "country_name": "United Kingdom",
+          "month": "April 2025",
+          "domain": "In-Orbit Servicing / Circular Economy",
+          "description": "Satellite refurbishment and upgrading services for orbital sustainability and circular space economy."
+        },
+        {
+          "id": 88,
+          "title": "Recycling Space Plant",
+          "institution": "Thales Alenia Space",
+          "country": "FR",
+          "country_name": "France",
+          "month": "April 2025",
+          "domain": "In-Orbit Manufacturing / Circular Economy",
+          "description": "Space-based recycling plant concept for the circular economy in space."
+        }
+      ]
+    },
+    {
+      "channel": "Visiting Researcher Channel",
+      "entry_count": 8,
+      "entries": [
+        {
+          "id": 89,
+          "title": "Brain-Inspired Computing with Spiking Neural Networks and RISC-V",
+          "institution": "University of Milano-Bicocca",
+          "country": "IT",
+          "country_name": "Italy",
+          "month": "April 2025",
+          "domain": "On-Board Computing / Neuromorphic",
+          "description": "Brain-inspired computing using spiking neural networks on RISC-V architecture."
+        },
+        {
+          "id": 90,
+          "title": "Towards Onboard Autonomy: Deployment of ML-based Anomaly Detection on Space-Qualified Hardware",
+          "institution": "Alma Mater Studiorum - Universita di Bologna",
+          "country": "IT",
+          "country_name": "Italy",
+          "month": "April 2025",
+          "domain": "On-Board Computing / AI / Anomaly Detection",
+          "description": "Deploying ML-based anomaly detection on space-qualified hardware for onboard autonomy."
+        },
+        {
+          "id": 91,
+          "title": "Innovative and Disruptive Methods for Robust Trajectory Optimization under Uncertainty for Cislunar Missions",
+          "institution": "Politecnico di Milano",
+          "country": "IT",
+          "country_name": "Italy",
+          "month": "July 2025",
+          "domain": "Mission Analysis / Trajectory Optimization",
+          "description": "Innovative methods for robust trajectory optimization under uncertainty for cislunar missions."
+        },
+        {
+          "id": 92,
+          "title": "Global simulation of Earth's upper atmosphere with the IRAP Plasmasphere-Ionosphere Model (IPIM)",
+          "institution": "CNRS",
+          "country": "FR",
+          "country_name": "France",
+          "month": "July 2025",
+          "domain": "Space Weather / Atmospheric Science",
+          "description": "Global simulation of Earth's upper atmosphere using the IRAP Plasmasphere-Ionosphere Model."
+        },
+        {
+          "id": 93,
+          "title": "Addressing the challenges of interdisciplinary use of tools in Concurrent Design to enhance subsystem integration",
+          "institution": "School of Communication and Culture of Aarhus University",
+          "country": "DK",
+          "country_name": "Denmark",
+          "month": "September 2025",
+          "domain": "Systems Engineering / Concurrent Design",
+          "description": "Addressing challenges of interdisciplinary tool use in concurrent design for enhanced subsystem integration."
+        },
+        {
+          "id": 94,
+          "title": "Concurrent Engineering and Model-Based System Engineering integration with Design for Testability: An Harmonized Framework for Enhanced Space Mission Design",
+          "institution": "Politecnico di Torino",
+          "country": "IT",
+          "country_name": "Italy",
+          "month": "September 2025",
+          "domain": "Systems Engineering / MBSE",
+          "description": "Integrating concurrent engineering and MBSE with design-for-testability for enhanced space mission design."
+        },
+        {
+          "id": 95,
+          "title": "Optical and Thermal Optical Degradation of Components and Materials due to Lunar Regolith focused on Solar Cells and MLIs",
+          "institution": "Airbus Defence and Space GmbH",
+          "country": "DE",
+          "country_name": "Germany",
+          "month": "October 2025",
+          "domain": "Lunar Exploration / Materials Degradation",
+          "description": "Studying optical and thermal degradation of solar cells and MLI due to lunar regolith exposure."
+        },
+        {
+          "id": 96,
+          "title": "Innovative Polyimide-Based Materials with Self-healing and Dust Mitigation Properties for Lunar Exploration Missions",
+          "institution": "Sapienza University of Rome",
+          "country": "IT",
+          "country_name": "Italy",
+          "month": "October 2025",
+          "domain": "Materials / Lunar Exploration",
+          "description": "Developing polyimide-based materials with self-healing and dust mitigation properties for lunar missions."
+        }
+      ]
+    }
+  ],
+  "statistics": {
+    "total_entries": 96,
+    "by_country": {
+      "DE_Germany": 12,
+      "FR_France": 11,
+      "UK_United_Kingdom": 11,
+      "IT_Italy": 11,
+      "ES_Spain": 7,
+      "NL_Netherlands": 8,
+      "CH_Switzerland": 5,
+      "RO_Romania": 3,
+      "AT_Austria": 3,
+      "PL_Poland": 3,
+      "DK_Denmark": 4,
+      "PT_Portugal": 2,
+      "BE_Belgium": 3,
+      "SE_Sweden": 1,
+      "NO_Norway": 1,
+      "GR_Greece": 1,
+      "IE_Ireland": 1,
+      "SI_Slovenia": 1,
+      "LV_Latvia": 1,
+      "FI_Finland": 1,
+      "LU_Luxembourg": 1
+    },
+    "by_channel": {
+      "Open Discovery Ideas Channel": 65,
+      "CleanCube": 5,
+      "EcoSTAR": 5,
+      "LATTICE": 11,
+      "Circular Economy in Space": 2,
+      "Visiting Researcher": 8
+    }
+  }
+}

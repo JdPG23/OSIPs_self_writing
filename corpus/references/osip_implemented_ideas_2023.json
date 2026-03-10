@@ -1,0 +1,1027 @@
+{
+  "source": "https://www.esa.int/Enabling_Support/Preparing_for_the_Future/Discovery_and_Preparation/Implemented_OSIP_ideas_2023",
+  "fetched": "2026-03-10",
+  "total_entries": 109,
+  "campaigns": [
+    {
+      "name": "Open Discovery Ideas Channel",
+      "entry_count": 101,
+      "entries": [
+        {
+          "id": 1,
+          "title": "Utilising machine learning techniques to develop physics-informed generative design algorithms for additive manufacturing",
+          "institution": "Universidad Nebrija",
+          "country": "Spain",
+          "domain": "Additive Manufacturing / AI",
+          "month": "January 2023",
+          "description": "Applying ML to create physics-informed generative design algorithms for additive manufacturing processes in space applications."
+        },
+        {
+          "id": 2,
+          "title": "Deep-space food production based on single-cell protein production by means of gas fermentation",
+          "institution": "Solar Foods",
+          "country": "Finland",
+          "domain": "Life Support / Food Production",
+          "month": "January 2023",
+          "description": "Producing single-cell protein via gas fermentation as a food source for deep-space missions."
+        },
+        {
+          "id": 3,
+          "title": "New approaches for the validation of vision-based navigation",
+          "institution": "Institut National Polytechnique de Toulouse",
+          "country": "France",
+          "domain": "GNC / Navigation",
+          "month": "January 2023",
+          "description": "Developing new validation methods for vision-based navigation systems used in space."
+        },
+        {
+          "id": 4,
+          "title": "Silicon carbide bandgap reference using hybrid construction techniques for operation over -100\u00b0C to 250\u00b0C and 1Mrad TID",
+          "institution": "Nascent Semiconductor",
+          "country": "United Kingdom",
+          "domain": "Electronics / Radiation Hardening",
+          "month": "January 2023",
+          "description": "Developing SiC bandgap reference circuits capable of operating across extreme temperatures and high radiation doses."
+        },
+        {
+          "id": 5,
+          "title": "Development of an order of magnitude better bromide broadband IR polariser and acousto-optic tunable filter",
+          "institution": "BBT-Materials Processing",
+          "country": "Czech Republic",
+          "domain": "Optics / Instruments",
+          "month": "January 2023",
+          "description": "Creating improved broadband IR polarisers and acousto-optic tunable filters using bromide materials."
+        },
+        {
+          "id": 6,
+          "title": "Non-invasive vestibular prosthetics for use in altered gravity: ascertaining practical utility and neuronal integrity",
+          "institution": "Karolinska Institutet",
+          "country": "Sweden",
+          "domain": "Life Sciences / Human Spaceflight",
+          "month": "January 2023",
+          "description": "Investigating non-invasive vestibular prosthetics to support astronaut health in altered gravity environments."
+        },
+        {
+          "id": 7,
+          "title": "Enabling healable composite manufacturing with towpreg for space applications",
+          "institution": "CompPair Technologies",
+          "country": "Switzerland",
+          "domain": "Materials / Composites",
+          "month": "February 2023",
+          "description": "Developing self-healing composite materials using towpreg for space applications."
+        },
+        {
+          "id": 8,
+          "title": "Innovative unit for the ECLS System used for air revitalisation focused on air disinfection and cleaning (ADC) - Clean Air in Space",
+          "institution": "Lukas Bucher",
+          "country": "Austria",
+          "domain": "Life Support / ECLSS",
+          "month": "February 2023",
+          "description": "Designing an innovative air disinfection and cleaning unit for Environmental Control and Life Support Systems."
+        },
+        {
+          "id": 9,
+          "title": "Thermoelectric high-entropy oxides for power supply in the space equipment",
+          "institution": "Empa",
+          "country": "Switzerland",
+          "domain": "Power / Materials",
+          "month": "February 2023",
+          "description": "Exploring high-entropy oxides as thermoelectric materials for space power supply."
+        },
+        {
+          "id": 10,
+          "title": "Novel Memristor-based neural network accelerators for space applications",
+          "institution": "TU Delft",
+          "country": "Netherlands",
+          "domain": "On-board Computing / AI Hardware",
+          "month": "March 2023",
+          "description": "Developing memristor-based hardware accelerators for neural network inference in space."
+        },
+        {
+          "id": 11,
+          "title": "Development of an open-source toolkit of simulated EnVision and VERITAS image products by means of Magellan and Earth observation analogue data",
+          "institution": "Imperial College London",
+          "country": "United Kingdom",
+          "domain": "Planetary Science / Earth Observation",
+          "month": "March 2023",
+          "description": "Creating open-source simulation tools for EnVision and VERITAS Venus mission image products."
+        },
+        {
+          "id": 12,
+          "title": "Towards sustainable and high-yield farming in space using nitrogen-fixing legume symbionts as inoculants",
+          "institution": "University of Z\u00fcrich",
+          "country": "Switzerland",
+          "domain": "Life Support / Space Agriculture",
+          "month": "March 2023",
+          "description": "Using nitrogen-fixing legume symbionts to enable sustainable farming in space environments."
+        },
+        {
+          "id": 13,
+          "title": "An inventive high-thrust micro-propulsion system compatible with small-satellites' safety and budget requirements",
+          "institution": "Sirin Orbital Systems",
+          "country": "Switzerland",
+          "domain": "Propulsion / Small Satellites",
+          "month": "March 2023",
+          "description": "Developing a high-thrust micro-propulsion system suitable for small satellite platforms."
+        },
+        {
+          "id": 14,
+          "title": "High density Lithium Niobate integrated photonic circuits for high-speed low-voltage modulators",
+          "institution": "Luxtelligence",
+          "country": "Switzerland",
+          "domain": "Photonics / Telecommunications",
+          "month": "March 2023",
+          "description": "Creating lithium niobate photonic integrated circuits for high-speed, low-voltage optical modulation."
+        },
+        {
+          "id": 15,
+          "title": "3D printed bone-like scaffolds as a potential means to infer on the osteogenesis process in microgravity",
+          "institution": "Fondazione E. Amaldi",
+          "country": "Italy",
+          "domain": "Life Sciences / Biomedical",
+          "month": "March 2023",
+          "description": "Using 3D-printed bone scaffolds to study osteogenesis (bone formation) processes in microgravity."
+        },
+        {
+          "id": 16,
+          "title": "Fluorinated plasma-based oxygen extraction from lunar regolith",
+          "institution": "Dublin City University",
+          "country": "Ireland",
+          "domain": "ISRU / Lunar Resources",
+          "month": "March 2023",
+          "description": "Extracting oxygen from lunar regolith using fluorinated plasma processes."
+        },
+        {
+          "id": 17,
+          "title": "Multifunctional sandwich composite space debris detector",
+          "institution": "University of Surrey",
+          "country": "United Kingdom",
+          "domain": "Space Debris / Structures",
+          "month": "March 2023",
+          "description": "Developing a multifunctional composite structure that also serves as a space debris impact detector."
+        },
+        {
+          "id": 18,
+          "title": "Lunar Geology Orbiter (LUGO)",
+          "institution": "TRL Space Systems",
+          "country": "Czech Republic",
+          "domain": "Planetary Science / Mission Concept",
+          "month": "March 2023",
+          "description": "A mission concept for an orbiter dedicated to lunar geological surveying."
+        },
+        {
+          "id": 19,
+          "title": "A technology-independent framework for edge AI deployment onboard satellites, and its characterisation on NanoXplore FPGAs",
+          "institution": "Universit\u00e0 di Pisa",
+          "country": "Italy",
+          "domain": "On-board Computing / AI",
+          "month": "March 2023",
+          "description": "Creating a technology-agnostic framework for deploying edge AI on satellites, tested on NanoXplore FPGAs."
+        },
+        {
+          "id": 20,
+          "title": "Novel machine learning approach based on Graph Neural Network (GNN) to address the complex micro-physics of material strength properties for the design and verification of new spacecraft components",
+          "institution": "University of Oxford",
+          "country": "United Kingdom",
+          "domain": "Materials Science / AI",
+          "month": "April 2023",
+          "description": "Using Graph Neural Networks to model material strength micro-physics for spacecraft component design."
+        },
+        {
+          "id": 21,
+          "title": "Reliable and fast processing of urine allows for water and nutrient recovery in space",
+          "institution": "Cranfield University",
+          "country": "United Kingdom",
+          "domain": "Life Support / Water Recovery",
+          "month": "April 2023",
+          "description": "Developing efficient urine processing systems for water and nutrient recovery in space."
+        },
+        {
+          "id": 22,
+          "title": "Improving and leveraging OpenMP for the efficient and safe use of new high-performance hardware platforms",
+          "institution": "Barcelona Supercomputing Center",
+          "country": "Spain",
+          "domain": "On-board Computing / Software",
+          "month": "April 2023",
+          "description": "Enhancing OpenMP for safe and efficient parallel computing on high-performance space hardware."
+        },
+        {
+          "id": 23,
+          "title": "Spatio-temporal fusion and artificial intelligence for plastic debris detection",
+          "institution": "Planetek Italia",
+          "country": "Italy",
+          "domain": "Earth Observation / AI",
+          "month": "April 2023",
+          "description": "Combining spatio-temporal data fusion with AI to detect plastic debris from space."
+        },
+        {
+          "id": 24,
+          "title": "Task-driven super-resolution of Sentinel-2 images",
+          "institution": "KP Labs",
+          "country": "Poland",
+          "domain": "Earth Observation / AI",
+          "month": "April 2023",
+          "description": "Applying task-driven super-resolution techniques to improve Sentinel-2 satellite imagery."
+        },
+        {
+          "id": 25,
+          "title": "FSS-constellations for avalanche detection with passive radar SLIDE",
+          "institution": "Fraunhofer-Gesellschaft",
+          "country": "Germany",
+          "domain": "Earth Observation / Radar",
+          "month": "April 2023",
+          "description": "Using satellite constellations with passive radar for avalanche detection."
+        },
+        {
+          "id": 26,
+          "title": "Few-shot anomaly detection in satellite telemetry",
+          "institution": "KP Labs",
+          "country": "Poland",
+          "domain": "Satellite Operations / AI",
+          "month": "April 2023",
+          "description": "Applying few-shot learning techniques for anomaly detection in satellite telemetry data."
+        },
+        {
+          "id": 27,
+          "title": "RISC-V-based SoC featuring a soft-GPU hardware accelerator for artificial intelligence on board",
+          "institution": "Universit\u00e0 di Pisa",
+          "country": "Italy",
+          "domain": "On-board Computing / AI Hardware",
+          "month": "April 2023",
+          "description": "Developing a RISC-V system-on-chip with integrated soft-GPU for onboard AI processing."
+        },
+        {
+          "id": 28,
+          "title": "Distributed, scalable and reliable onboard system software based on commercial off-the-shelf (COTS) onboard computers",
+          "institution": "University of Strathclyde",
+          "country": "United Kingdom",
+          "domain": "On-board Computing / Software",
+          "month": "April 2023",
+          "description": "Developing distributed, scalable onboard software architectures using COTS computing hardware."
+        },
+        {
+          "id": 29,
+          "title": "Optimised artificial intelligence HPDP interface using Klepsydra streaming",
+          "institution": "Klepsydra Technologies",
+          "country": "Switzerland",
+          "domain": "On-board Computing / AI",
+          "month": "May 2023",
+          "description": "Optimising AI interfaces for high-performance data processing using Klepsydra streaming technology."
+        },
+        {
+          "id": 30,
+          "title": "Fused Fiber Layer Deposition (FFLD) of lunar regolith",
+          "institution": "Aalen University",
+          "country": "Germany",
+          "domain": "ISRU / Additive Manufacturing",
+          "month": "May 2023",
+          "description": "Developing a fused fiber layer deposition technique for processing lunar regolith."
+        },
+        {
+          "id": 31,
+          "title": "Real-time in-situ monitoring of particle deposition with on-chip electronic dust counter",
+          "institution": "Politecnico di Milano",
+          "country": "Italy",
+          "domain": "Instruments / Sensors",
+          "month": "May 2023",
+          "description": "Creating an on-chip electronic dust counter for real-time monitoring of particle deposition."
+        },
+        {
+          "id": 32,
+          "title": "An open source FPGA toolchain for a European space-grade FPGA",
+          "institution": "YosysHQ",
+          "country": "Austria",
+          "domain": "On-board Computing / EEE Components",
+          "month": "May 2023",
+          "description": "Building an open-source FPGA toolchain targeting European space-grade FPGA devices."
+        },
+        {
+          "id": 33,
+          "title": "Towards exascale reconfigurable and rad-hard accelerated computing in space",
+          "institution": "Politecnico di Torino",
+          "country": "Italy",
+          "domain": "On-board Computing / Radiation Hardening",
+          "month": "May 2023",
+          "description": "Pursuing exascale reconfigurable computing architectures with radiation hardness for space."
+        },
+        {
+          "id": 34,
+          "title": "A photonically referenced extremely stable oscillator",
+          "institution": "Cycle",
+          "country": "Germany",
+          "domain": "Photonics / Timing & Frequency",
+          "month": "May 2023",
+          "description": "Developing an ultra-stable oscillator referenced to a photonic system."
+        },
+        {
+          "id": 35,
+          "title": "Detection of methane pipeline leakages based on a multimodal satellite data fusion and time series approach",
+          "institution": "OHB Digital Connect",
+          "country": "Germany",
+          "domain": "Earth Observation / Environment",
+          "month": "May 2023",
+          "description": "Using multimodal satellite data fusion and time series analysis to detect methane pipeline leaks."
+        },
+        {
+          "id": 36,
+          "title": "Passive protective shields for lunar and martian outposts",
+          "institution": "Universit\u00e9 libre de Bruxelles",
+          "country": "Belgium",
+          "domain": "Exploration / Structures",
+          "month": "May 2023",
+          "description": "Designing passive radiation and micrometeorite shields for lunar and Mars surface habitats."
+        },
+        {
+          "id": 37,
+          "title": "Optimising countermeasures against cardiovascular deconditioning and cerebral hemodynamics changes in long-term human spaceflights",
+          "institution": "Politecnico di Torino",
+          "country": "Italy",
+          "domain": "Life Sciences / Human Spaceflight",
+          "month": "May 2023",
+          "description": "Optimising medical countermeasures for cardiovascular and cerebral hemodynamic changes during long-duration spaceflight."
+        },
+        {
+          "id": 38,
+          "title": "Wearable sensors of astronaut postures",
+          "institution": "Universit\u00e0 degli Studi di Firenze",
+          "country": "Italy",
+          "domain": "Life Sciences / Wearables",
+          "month": "May 2023",
+          "description": "Developing wearable sensor systems to monitor and analyse astronaut body postures."
+        },
+        {
+          "id": 39,
+          "title": "Scaling-up capability of human-robot interaction supported approaches for robotically 3D-printing extraterrestrial habitats",
+          "institution": "Delft University of Technology",
+          "country": "Netherlands",
+          "domain": "Robotics / ISRU / Additive Manufacturing",
+          "month": "May 2023",
+          "description": "Scaling up human-robot interaction approaches for robotic 3D printing of habitats on other worlds."
+        },
+        {
+          "id": 40,
+          "title": "Leveraging high reliability low latency machine learning for imaging during very fast autonomous fly-by missions",
+          "institution": "University of Tartu",
+          "country": "Estonia",
+          "domain": "On-board Computing / AI / Autonomy",
+          "month": "May 2023",
+          "description": "Applying low-latency ML for reliable imaging during high-speed autonomous fly-by missions."
+        },
+        {
+          "id": 41,
+          "title": "Erbium-doped photonic integrated circuit-based amplifier",
+          "institution": "Luxtelligence",
+          "country": "Switzerland",
+          "domain": "Photonics / Telecommunications",
+          "month": "June 2023",
+          "description": "Developing erbium-doped photonic integrated circuit amplifiers for space communications."
+        },
+        {
+          "id": 42,
+          "title": "Control of spherical robots for lunar cave exploration using telescopic linear actuators for locomotion",
+          "institution": "University of Tartu",
+          "country": "Estonia",
+          "domain": "Robotics / Exploration",
+          "month": "June 2023",
+          "description": "Designing spherical robots with telescopic actuators for exploring lunar caves."
+        },
+        {
+          "id": 43,
+          "title": "Probabilistic data structures for secure and reliable RISC-V processor",
+          "institution": "University of Twente",
+          "country": "Netherlands",
+          "domain": "On-board Computing / Cybersecurity",
+          "month": "June 2023",
+          "description": "Using probabilistic data structures to enhance the security and reliability of RISC-V processors."
+        },
+        {
+          "id": 44,
+          "title": "Towards the understanding of the subsurface planetary oceans using ocean-induced magnetic field",
+          "institution": "Charles University",
+          "country": "Czech Republic",
+          "domain": "Planetary Science / Geophysics",
+          "month": "June 2023",
+          "description": "Studying subsurface planetary oceans through their induced magnetic field signatures."
+        },
+        {
+          "id": 45,
+          "title": "Getting the most out of image-level labels: weakly supervised learning for hyperspectral image analysis",
+          "institution": "KP Labs",
+          "country": "Poland",
+          "domain": "Earth Observation / AI",
+          "month": "June 2023",
+          "description": "Applying weakly supervised learning techniques to hyperspectral satellite image analysis."
+        },
+        {
+          "id": 46,
+          "title": "Reusable shape memory shock absorption elements for future landing systems using additive manufacturing",
+          "institution": "CSEM",
+          "country": "Switzerland",
+          "domain": "Mechanisms / Materials",
+          "month": "June 2023",
+          "description": "Developing reusable shape-memory alloy shock absorbers for landing systems via additive manufacturing."
+        },
+        {
+          "id": 47,
+          "title": "Highly durable vacuum lubricant formulations based on ionic liquids",
+          "institution": "MATERIALES",
+          "country": "Germany",
+          "domain": "Materials / Tribology",
+          "month": "July 2023",
+          "description": "Formulating durable vacuum lubricants based on ionic liquids for space mechanisms."
+        },
+        {
+          "id": 48,
+          "title": "Using spatial augmented reality to improve astronauts' situational awareness and training efficacy through a novel seamless transition between training and operation for future lunar missions",
+          "institution": "German Aerospace Center DLR",
+          "country": "Germany",
+          "domain": "Human Spaceflight / AR-VR",
+          "month": "July 2023",
+          "description": "Applying spatial augmented reality to enhance astronaut training and operational awareness for lunar missions."
+        },
+        {
+          "id": 49,
+          "title": "Development of tailored surfaces for a more efficient production of hydrogen and oxygen in-space via PEM electrolysis",
+          "institution": "KU Leuven",
+          "country": "Belgium",
+          "domain": "Power / ISRU",
+          "month": "July 2023",
+          "description": "Engineering electrode surfaces for improved PEM electrolysis to produce hydrogen and oxygen in space."
+        },
+        {
+          "id": 50,
+          "title": "MARSCROP - Martian Regolith Salix Co-cropping for Perchlorate",
+          "institution": "University College Dublin",
+          "country": "Ireland",
+          "domain": "ISRU / Space Agriculture",
+          "month": "July 2023",
+          "description": "Co-cropping willow (Salix) in Martian regolith to address perchlorate contamination for agriculture."
+        },
+        {
+          "id": 51,
+          "title": "Data-driven robust guidance algorithms to approach a tumbling space debris",
+          "institution": "Carleton University",
+          "country": "Canada",
+          "domain": "GNC / Space Debris",
+          "month": "July 2023",
+          "description": "Developing data-driven guidance algorithms for approaching and capturing tumbling debris objects."
+        },
+        {
+          "id": 52,
+          "title": "Communication signals of opportunity for reflectometry (OUTSOURCE)",
+          "institution": "University of Sannio",
+          "country": "Italy",
+          "domain": "Earth Observation / GNSS Reflectometry",
+          "month": "July 2023",
+          "description": "Using communication signals of opportunity for remote-sensing reflectometry applications."
+        },
+        {
+          "id": 53,
+          "title": "The GRACE project: high-energy giant radio galaxies and their duty cycle",
+          "institution": "Istituto Nazionale di Astrofisica",
+          "country": "Italy",
+          "domain": "Astrophysics / Science",
+          "month": "July 2023",
+          "description": "Studying high-energy giant radio galaxies and their activity duty cycles."
+        },
+        {
+          "id": 54,
+          "title": "A model to evaluate the effects of microgravity on the structural and functional properties of the blood-brain barrier [BBBinSpace]",
+          "institution": "Istituto Italiano di Tecnologia",
+          "country": "Italy",
+          "domain": "Life Sciences / Biomedical",
+          "month": "July 2023",
+          "description": "Modelling the effects of microgravity on the blood-brain barrier's structure and function."
+        },
+        {
+          "id": 55,
+          "title": "Bridge monitoring based on single pass SAR images",
+          "institution": "University of Strathclyde",
+          "country": "United Kingdom",
+          "domain": "Earth Observation / Infrastructure",
+          "month": "July 2023",
+          "description": "Monitoring bridge structural health using single-pass SAR satellite imagery."
+        },
+        {
+          "id": 56,
+          "title": "Towards a new method for snow property estimation from space using bistatic radar",
+          "institution": "Eidgen\u00f6ssische Technische Hochschule Z\u00fcrich (ETH)",
+          "country": "Switzerland",
+          "domain": "Earth Observation / Radar",
+          "month": "July 2023",
+          "description": "Developing bistatic radar methods for estimating snow properties from space."
+        },
+        {
+          "id": 57,
+          "title": "Design and study of a novel slow wave planar structure for miniaturized TWTs operating at very low voltage",
+          "institution": "University of Palermo",
+          "country": "Italy",
+          "domain": "Telecommunications / RF",
+          "month": "August 2023",
+          "description": "Designing novel slow-wave structures for miniaturised, low-voltage travelling wave tubes."
+        },
+        {
+          "id": 58,
+          "title": "Development of a wearable, closed-loop neuromodulation protocol for enhancing sleep quality and architecture during long-duration spaceflight",
+          "institution": "Eidgen\u00f6ssische Technische Hochschule Z\u00fcrich (ETH)",
+          "country": "Switzerland",
+          "domain": "Life Sciences / Wearables",
+          "month": "August 2023",
+          "description": "Creating a wearable neuromodulation system for improving astronaut sleep during long-duration missions."
+        },
+        {
+          "id": 59,
+          "title": "Simulation toolbox for unconditionally secure on-chip satellite quantum communication networks operating in the telecom wavelength range",
+          "institution": "Karl-Franzens University of Graz",
+          "country": "Austria",
+          "domain": "Quantum Communications / Simulation",
+          "month": "August 2023",
+          "description": "Building simulation tools for secure quantum communication networks on satellite photonic chips."
+        },
+        {
+          "id": 60,
+          "title": "Large Language Model agent to interact with Earth Observation data",
+          "institution": "Ask Earth AG",
+          "country": "Switzerland",
+          "domain": "Earth Observation / AI / LLM",
+          "month": "September 2023",
+          "description": "Developing an LLM-based agent to query and interact with Earth Observation data."
+        },
+        {
+          "id": 61,
+          "title": "Noise rejection in optical communication systems using quantum pulse gating",
+          "institution": "Quantum Optical Technologies sp. z o.o.",
+          "country": "Poland",
+          "domain": "Quantum Technologies / Optical Communications",
+          "month": "September 2023",
+          "description": "Using quantum pulse gating techniques to reject noise in optical satellite communication."
+        },
+        {
+          "id": 62,
+          "title": "Tools for laser stabilization for space-based atom quantum sensors",
+          "institution": "FORTH",
+          "country": "Greece",
+          "domain": "Quantum Sensors / Lasers",
+          "month": "September 2023",
+          "description": "Developing laser stabilisation tools for atom-based quantum sensors in space."
+        },
+        {
+          "id": 63,
+          "title": "SpaceHopper - Towards small-scale legged hopping robots for low-gravity space exploration",
+          "institution": "Eidgen\u00f6ssische Technische Hochschule Z\u00fcrich (ETH)",
+          "country": "Switzerland",
+          "domain": "Robotics / Exploration",
+          "month": "September 2023",
+          "description": "Developing small legged hopping robots for exploring low-gravity environments."
+        },
+        {
+          "id": 64,
+          "title": "Synthesis of nanocatalysts for solar energy conversion in reduced gravitational environments",
+          "institution": "Universit\u00e4t Bremen",
+          "country": "Germany",
+          "domain": "Power / Nanotechnology",
+          "month": "September 2023",
+          "description": "Synthesising nanocatalysts for solar energy conversion optimised for reduced gravity."
+        },
+        {
+          "id": 65,
+          "title": "Flow NMR-based online biochemical control of microalgae cultivated in photobioreactor for spatial food supply",
+          "institution": "Nantes Universit\u00e9",
+          "country": "France",
+          "domain": "Life Support / Food Production",
+          "month": "September 2023",
+          "description": "Using flow NMR for real-time biochemical monitoring of microalgae cultivation for space food."
+        },
+        {
+          "id": 66,
+          "title": "Investigation of dust adhesion with an original combined experimental approach (DOCEA) to support planetary, lunar and asteroid missions",
+          "institution": "ONERA",
+          "country": "France",
+          "domain": "Planetary Science / Dust Mitigation",
+          "month": "September 2023",
+          "description": "Experimentally investigating dust adhesion mechanisms to support planetary surface missions."
+        },
+        {
+          "id": 67,
+          "title": "Advanced thermodynamic modelling of the Am-U-Np-O-Pt-Rh system to support the design and safety demonstration of Am-based radioisotope power sources",
+          "institution": "TU Delft",
+          "country": "Netherlands",
+          "domain": "Power / Radioisotope Systems",
+          "month": "September 2023",
+          "description": "Thermodynamic modelling of americium-based systems for radioisotope power source design and safety."
+        },
+        {
+          "id": 68,
+          "title": "PRe-amp- & filter-free sOlar blind iMaging for low EarTH orbit early warning and localisation of fire ignition using novEl galliUm oxide detector arrayS (PROMETHEUS)",
+          "institution": "Nanovation",
+          "country": "France",
+          "domain": "Earth Observation / Detectors",
+          "month": "September 2023",
+          "description": "Developing gallium oxide UV detector arrays for fire detection and early warning from LEO."
+        },
+        {
+          "id": 69,
+          "title": "Generation of entangled photon pairs from nonlinear metasurfaces",
+          "institution": "Silicon Austria Labs GmbH",
+          "country": "Austria",
+          "domain": "Quantum Technologies / Photonics",
+          "month": "October 2023",
+          "description": "Generating entangled photon pairs using nonlinear metasurfaces for quantum applications."
+        },
+        {
+          "id": 70,
+          "title": "Compact, continuous ultracold strontium sources for optical clocks and matter wave interferometers",
+          "institution": "University of Amsterdam",
+          "country": "Netherlands",
+          "domain": "Quantum Sensors / Timing & Frequency",
+          "month": "October 2023",
+          "description": "Creating compact ultracold strontium atom sources for space-based optical clocks and atom interferometers."
+        },
+        {
+          "id": 71,
+          "title": "High temperature ionic liquids for electrospray propulsion",
+          "institution": "Ienai SPACE SL",
+          "country": "Spain",
+          "domain": "Propulsion / Electric Propulsion",
+          "month": "October 2023",
+          "description": "Developing high-temperature ionic liquid propellants for electrospray thruster systems."
+        },
+        {
+          "id": 72,
+          "title": "Powder bed additive manufacturing of transition metal dichalcogenides-based composites for space applications (BEAM-TMD)",
+          "institution": "Kungliga Tekniska h\u00f6gskolan",
+          "country": "Sweden",
+          "domain": "Additive Manufacturing / Materials",
+          "month": "October 2023",
+          "description": "Powder bed additive manufacturing of TMD-based composites for space use."
+        },
+        {
+          "id": 73,
+          "title": "Compact optical frequency discriminator with low sensitivity to environment",
+          "institution": "SILENTSYS SAS",
+          "country": "France",
+          "domain": "Photonics / Timing & Frequency",
+          "month": "October 2023",
+          "description": "Developing a compact, environment-insensitive optical frequency discriminator."
+        },
+        {
+          "id": 74,
+          "title": "Spectroscopic radiation hard imaging detector for observation, astronomy and space dosimetry",
+          "institution": "Advafab Oy",
+          "country": "Finland",
+          "domain": "Detectors / Radiation Hardening",
+          "month": "October 2023",
+          "description": "Creating radiation-hard spectroscopic imaging detectors for astronomy and dosimetry."
+        },
+        {
+          "id": 75,
+          "title": "Novel interlayer alloys for bonding high conductivity metals to silicon using laser powder bed fusion",
+          "institution": "Politecnico di Milano",
+          "country": "Italy",
+          "domain": "Additive Manufacturing / Materials",
+          "month": "October 2023",
+          "description": "Developing interlayer alloys for bonding high-conductivity metals to silicon via laser powder bed fusion."
+        },
+        {
+          "id": 76,
+          "title": "Detecting gravity anomalies in asteroids: application to Hera's radio science",
+          "institution": "University of Liverpool",
+          "country": "United Kingdom",
+          "domain": "Planetary Science / Navigation",
+          "month": "October 2023",
+          "description": "Detecting asteroid gravity anomalies with application to ESA's Hera mission radio science."
+        },
+        {
+          "id": 77,
+          "title": "Regolith intelligence: ISRU prepping with machine learning research on lunar rocks",
+          "institution": "Universit\u00e4t M\u00fcnster",
+          "country": "Germany",
+          "domain": "ISRU / AI",
+          "month": "October 2023",
+          "description": "Applying machine learning to characterise lunar regolith for ISRU preparation."
+        },
+        {
+          "id": 78,
+          "title": "Decoding the aerosol-clouds interaction from space: Providing the missing link of three-dimensional physicochemical characteristics of submicron (500 nm) aerosols",
+          "institution": "McGill University",
+          "country": "Canada",
+          "domain": "Earth Observation / Atmospheric Science",
+          "month": "October 2023",
+          "description": "Characterising 3D physicochemical properties of submicron aerosols to decode aerosol-cloud interactions."
+        },
+        {
+          "id": 79,
+          "title": "Enable active control of surface roughness during advanced manufacturing using laser pulse shaping technologies",
+          "institution": "University College London",
+          "country": "United Kingdom",
+          "domain": "Manufacturing / Lasers",
+          "month": "October 2023",
+          "description": "Actively controlling surface roughness during manufacturing via laser pulse shaping."
+        },
+        {
+          "id": 80,
+          "title": "Improved thermoelastic stability of CFRP sandwich panels with embedded aluminum heat pipes through the use of graphene-enhanced adhesives and nano-modified CFRP materials",
+          "institution": "Adamant Composites Ltd.",
+          "country": "Greece",
+          "domain": "Materials / Thermal",
+          "month": "November 2023",
+          "description": "Enhancing thermoelastic stability of CFRP sandwich panels using graphene adhesives and nanomodified materials."
+        },
+        {
+          "id": 81,
+          "title": "Generating an open AI training data set for Moon craters with crowd science via a videogame",
+          "institution": "Hochschule Darmstadt - University of Applied Sciences",
+          "country": "Germany",
+          "domain": "Planetary Science / AI / Citizen Science",
+          "month": "November 2023",
+          "description": "Creating an AI training dataset for lunar crater detection through crowd science and a videogame."
+        },
+        {
+          "id": 82,
+          "title": "Holistic approach on metal/high-performance 3D-printable polymer interphase connection for RF-antenna applications",
+          "institution": "Cubicure GmbH",
+          "country": "Austria",
+          "domain": "Additive Manufacturing / RF",
+          "month": "November 2023",
+          "description": "Developing 3D-printable metal-polymer interfaces for RF antenna applications."
+        },
+        {
+          "id": 83,
+          "title": "Advancing space applications through 3D voxel-based multi-material laser powder bed fusion (SpaceFuse)",
+          "institution": "University of Minho",
+          "country": "Portugal",
+          "domain": "Additive Manufacturing",
+          "month": "November 2023",
+          "description": "Advancing voxel-based multi-material laser powder bed fusion for space components."
+        },
+        {
+          "id": 84,
+          "title": "Experimental replication of ablating re-entry vehicles in hypervelocity flows",
+          "institution": "University of Oxford",
+          "country": "United Kingdom",
+          "domain": "Re-entry / Aerothermodynamics",
+          "month": "November 2023",
+          "description": "Experimentally replicating ablation processes of re-entry vehicles in hypervelocity flows."
+        },
+        {
+          "id": 85,
+          "title": "Modulation Of Microglia through Extracellular Vesicles in Altered gravity (-MOM EVA-)",
+          "institution": "Fondazione Istituto Italiano di Tecnologia",
+          "country": "Italy",
+          "domain": "Life Sciences / Biomedical",
+          "month": "November 2023",
+          "description": "Studying microglial modulation via extracellular vesicles in altered gravity conditions."
+        },
+        {
+          "id": 86,
+          "title": "3D printing of multi-materials combining metallic powders with foils, and using beam shaping",
+          "institution": "\u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne (EPFL)",
+          "country": "Switzerland",
+          "domain": "Additive Manufacturing",
+          "month": "November 2023",
+          "description": "Multi-material 3D printing combining metallic powders with foils using beam shaping."
+        },
+        {
+          "id": 87,
+          "title": "Explore the use of neutron computed tomography for structural analysis of extraterrestrial material through dedicated end-to-end studies of the NWA 7034 'Black Beauty' Mars meteorite",
+          "institution": "University of Copenhagen",
+          "country": "Denmark",
+          "domain": "Planetary Science / Instruments",
+          "month": "November 2023",
+          "description": "Applying neutron CT to analyse the structure of Mars meteorite NWA 7034 'Black Beauty'."
+        },
+        {
+          "id": 88,
+          "title": "Energy-aware infrastructure-free localisation for robotic swarms on lunar south pole missions",
+          "institution": "Michele Magno",
+          "country": "Switzerland",
+          "domain": "Robotics / Navigation",
+          "month": "November 2023",
+          "description": "Developing energy-efficient localisation for robotic swarms operating at the lunar south pole."
+        },
+        {
+          "id": 89,
+          "title": "Modelling and control of sloshing phenomena for new generation Space missions",
+          "institution": "Institut Sup\u00e9rieur de l'A\u00e9ronautique et de l'Espace (ISAE-SUPAERO)",
+          "country": "France",
+          "domain": "GNC / Fluid Dynamics",
+          "month": "November 2023",
+          "description": "Modelling and controlling propellant sloshing for next-generation space missions."
+        },
+        {
+          "id": 90,
+          "title": "Design for additive manufacturing of spaceborne compliant mechanisms",
+          "institution": "CSEM S.A.",
+          "country": "Switzerland",
+          "domain": "Additive Manufacturing / Mechanisms",
+          "month": "November 2023",
+          "description": "Designing compliant mechanisms for space applications optimised for additive manufacturing."
+        },
+        {
+          "id": 91,
+          "title": "Nanoparticle coatings to mitigate the multipactor effect in high-frequency devices [NanoMitigate]",
+          "institution": "Nanostine S.L.",
+          "country": "Spain",
+          "domain": "RF / Nanotechnology",
+          "month": "November 2023",
+          "description": "Applying nanoparticle coatings to suppress the multipactor effect in high-frequency RF devices."
+        },
+        {
+          "id": 92,
+          "title": "3D-bioprinting of bacterial biofilms for complete removal of pharmaceuticals in nitrifying steps of regenerative life support systems",
+          "institution": "Fachhochschule Nordwestschweiz (FHNW)",
+          "country": "Switzerland",
+          "domain": "Life Support / Bioprinting",
+          "month": "November 2023",
+          "description": "Using 3D-bioprinted bacterial biofilms to remove pharmaceuticals in regenerative life support systems."
+        },
+        {
+          "id": 93,
+          "title": "A novel propellant storage system for air-breathing electric propulsion",
+          "institution": "Cranfield University",
+          "country": "United Kingdom",
+          "domain": "Propulsion / VLEO",
+          "month": "December 2023",
+          "description": "Developing novel propellant storage for air-breathing electric propulsion in very low Earth orbit."
+        },
+        {
+          "id": 94,
+          "title": "In-space manufacturing of joints and tubular struts for on-orbit assembly of very large carbon fiber framework structures",
+          "institution": "Deployables Cubed GmbH",
+          "country": "Germany",
+          "domain": "In-Space Manufacturing / Structures",
+          "month": "December 2023",
+          "description": "Manufacturing joints and struts in space for on-orbit assembly of large carbon fibre structures."
+        },
+        {
+          "id": 95,
+          "title": "Recycling, sustainability and circular solutions for future exploration",
+          "institution": "Nextek Limited",
+          "country": "United Kingdom",
+          "domain": "Sustainability / Exploration",
+          "month": "December 2023",
+          "description": "Developing recycling and circular economy solutions for future space exploration missions."
+        },
+        {
+          "id": 96,
+          "title": "Pioneering space power systems: Engineered porous electrodes via 3D printing and functional coating for metal-supported solid oxide fuel cells (PrintFuel)",
+          "institution": "University of Twente",
+          "country": "Netherlands",
+          "domain": "Power / Additive Manufacturing",
+          "month": "December 2023",
+          "description": "3D-printing porous electrodes with functional coatings for solid oxide fuel cells in space."
+        },
+        {
+          "id": 97,
+          "title": "ML-Optimised low-profile antennas for small satellites",
+          "institution": "University of Toronto",
+          "country": "Canada",
+          "domain": "Telecommunications / AI",
+          "month": "December 2023",
+          "description": "Using machine learning to optimise low-profile antenna designs for small satellites."
+        },
+        {
+          "id": 98,
+          "title": "Beyond Syntonisation: Demonstrating Upper Side Band Synchronisation",
+          "institution": "SENER TAFS, S.A.U.",
+          "country": "Spain",
+          "domain": "Telecommunications / Timing",
+          "month": "December 2023",
+          "description": "Demonstrating upper side band synchronisation techniques beyond syntonisation."
+        },
+        {
+          "id": 99,
+          "title": "Development of Refill Friction Stir Spot Welding (RFSSW) for skinstringer-frame stiffening of Al-CuLi cryogenic tanks",
+          "institution": "TWI Limited - The Welding Institute",
+          "country": "United Kingdom",
+          "domain": "Manufacturing / Structures",
+          "month": "December 2023",
+          "description": "Developing RFSSW for joining Al-CuLi alloy components in cryogenic tank construction."
+        },
+        {
+          "id": 100,
+          "title": "Sustainable thermal joint workmanship validation by smart material",
+          "institution": "Touch Sensity",
+          "country": "France",
+          "domain": "Thermal / Smart Materials",
+          "month": "December 2023",
+          "description": "Validating thermal joint workmanship using smart materials for sustainability."
+        },
+        {
+          "id": 101,
+          "title": "OrbitGPT - Generative astrodynamics",
+          "institution": "University of Strathclyde",
+          "country": "United Kingdom",
+          "domain": "Astrodynamics / AI / LLM",
+          "month": "December 2023",
+          "description": "Applying generative AI to astrodynamics problems."
+        }
+      ]
+    },
+    {
+      "name": "Campaign: New concepts for onboard software development",
+      "entry_count": 1,
+      "entries": [
+        {
+          "id": 102,
+          "title": "How does machine learning taste: extending model-based design techniques to support machine learning applications integration",
+          "institution": "Politecnico di Milano",
+          "country": "Italy",
+          "domain": "On-board Software / AI",
+          "month": "March 2023",
+          "description": "Extending model-based design techniques to integrate machine learning applications in onboard software."
+        }
+      ]
+    },
+    {
+      "name": "Campaign: Innovative Mission Concepts Enabled by Swarms of CubeSats",
+      "entry_count": 7,
+      "entries": [
+        {
+          "id": 103,
+          "title": "AltiCube+ - An Aggregated CubeSats Swarm for Long Fixed-baseline Radar Altimetry",
+          "institution": "TU Delft",
+          "country": "Netherlands",
+          "domain": "Mission Concept / Earth Observation",
+          "month": "September 2023",
+          "description": "A CubeSat swarm concept for long fixed-baseline radar altimetry."
+        },
+        {
+          "id": 104,
+          "title": "Swarms of CubeSats for kW-scale Space-Based Solar Power (16U4SBSP)",
+          "institution": "Sirin Orbital Systems AG",
+          "country": "Switzerland",
+          "domain": "Mission Concept / Space-Based Solar Power",
+          "month": "September 2023",
+          "description": "A CubeSat swarm concept for kW-scale space-based solar power generation."
+        },
+        {
+          "id": 105,
+          "title": "HydroSwarm increasing GNSS Reflectometry instantaneous coverage to address flood monitoring and soil moisture with cooperative GNSS-R CubeSats",
+          "institution": "Surrey Satellite Technology Limited",
+          "country": "United Kingdom",
+          "domain": "Mission Concept / GNSS Reflectometry",
+          "month": "September 2023",
+          "description": "Cooperative GNSS-R CubeSat swarm for improved flood monitoring and soil moisture coverage."
+        },
+        {
+          "id": 106,
+          "title": "Radar Cluster for Earth Remote Sensing (RaCERS)",
+          "institution": "GeoOptics Switzerland SA",
+          "country": "Switzerland",
+          "domain": "Mission Concept / Radar",
+          "month": "September 2023",
+          "description": "A clustered radar CubeSat concept for Earth remote sensing."
+        },
+        {
+          "id": 107,
+          "title": "Revealing Orbital and Atmospheric Responses to Solar activity (ROARS)",
+          "institution": "University of Warwick",
+          "country": "United Kingdom",
+          "domain": "Mission Concept / Space Weather",
+          "month": "September 2023",
+          "description": "CubeSat swarm to study orbital and atmospheric responses to solar activity."
+        },
+        {
+          "id": 108,
+          "title": "COMCUBE-S: A swarm of CubeSat-sized Compton telescopes for all-sky detection and polarisation measurements of gamma-ray bursts",
+          "institution": "University College Dublin",
+          "country": "Ireland",
+          "domain": "Mission Concept / Astrophysics",
+          "month": "September 2023",
+          "description": "CubeSat Compton telescope swarm for all-sky gamma-ray burst detection and polarisation measurement."
+        },
+        {
+          "id": 109,
+          "title": "PULSARS swarm (Precision Ubiquitous Low-cost Synthetic Aperture Regional Satellites)",
+          "institution": "Satellite Applications Catapult",
+          "country": "United Kingdom",
+          "domain": "Mission Concept / SAR",
+          "month": "September 2023",
+          "description": "A low-cost CubeSat swarm for precision synthetic aperture radar regional coverage."
+        }
+      ]
+    }
+  ],
+  "country_statistics": {
+    "Switzerland": 20,
+    "United Kingdom": 16,
+    "Italy": 15,
+    "Germany": 11,
+    "France": 8,
+    "Netherlands": 7,
+    "Poland": 4,
+    "Spain": 5,
+    "Austria": 5,
+    "Czech Republic": 3,
+    "Ireland": 3,
+    "Estonia": 2,
+    "Canada": 3,
+    "Belgium": 2,
+    "Sweden": 2,
+    "Finland": 2,
+    "Greece": 2,
+    "Denmark": 1,
+    "Portugal": 1
+  }
+}

@@ -22,10 +22,18 @@ CHROMA_DIR = PROJECT_ROOT / ".chromadb"  # local vector store
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY", "")
 
-# Generator model (proposal writing — needs to be smart)
-GENERATOR_MODEL = os.getenv("OSIP_GENERATOR_MODEL", "anthropic/claude-sonnet-4.6")
-# Scorer model (LLM-as-judge — needs consistency, can be cheaper)
-SCORER_MODEL = os.getenv("OSIP_SCORER_MODEL", "deepseek/deepseek-v3.2")
+# Generator model (proposal writing)
+# Gemini 3.1 Flash Lite: #34 LM Arena (ELO 1380), $0.25/$1.50 per M tokens
+# 3.4s per call, 1M context. Best speed/quality/cost for autonomous loop.
+GENERATOR_MODEL = os.getenv("OSIP_GENERATOR_MODEL", "google/gemini-3.1-flash-lite-preview")
+
+# Scorer model (LLM-as-judge — consistency + cheap)
+# Same model works well for scoring: fast, consistent JSON output
+SCORER_MODEL = os.getenv("OSIP_SCORER_MODEL", "google/gemini-3.1-flash-lite-preview")
+
+# Premium model (for final polished proposals after pipeline is optimized)
+# Gemini 3 Flash: #8 LM Arena (ELO 1473), $0.50/$3.00 per M tokens
+PREMIUM_MODEL = os.getenv("OSIP_PREMIUM_MODEL", "google/gemini-3-flash-preview")
 
 # --- Embedding Settings ---
 # "huggingface" (free, local) or "openai" (paid, needs OPENAI_API_KEY)

@@ -13,7 +13,7 @@ import sys
 from dotenv import load_dotenv
 load_dotenv()
 
-from config import EXPERIMENT_TIMEOUT, USE_RAG
+from config import EXPERIMENT_TIMEOUT, USE_RAG, GENERATOR_MODEL, SCORER_MODEL, PREMIUM_MODEL
 from pipeline import run_pipeline
 from scorer import score_proposal, quick_score
 from prepare import (
@@ -38,6 +38,11 @@ def main():
         help="Use quick scoring (single LLM call, less accurate)",
     )
     parser.add_argument(
+        "--premium",
+        action="store_true",
+        help="Use premium model for generation (higher quality, higher cost)",
+    )
+    parser.add_argument(
         "--experiment-id",
         type=str,
         default=None,
@@ -45,13 +50,21 @@ def main():
     )
     args = parser.parse_args()
 
+    # Override generator model if --premium flag
+    if args.premium:
+        import config
+        config.GENERATOR_MODEL = PREMIUM_MODEL
+
     experiment_id = args.experiment_id or time.strftime("%Y%m%d_%H%M%S")
 
+    gen_model = PREMIUM_MODEL if args.premium else GENERATOR_MODEL
     print(f"=== OSIP Self-Writing Experiment ===")
     print(f"topic:          {args.topic}")
     print(f"experiment_id:  {experiment_id}")
+    print(f"generator:      {gen_model}")
+    print(f"scorer:         {SCORER_MODEL}")
     print(f"scoring_mode:   {'quick' if args.quick else 'full'}")
-    print(f"rag_mode:       {'supabase+llamaindex' if USE_RAG else 'plain text'}")
+    print(f"rag_mode:       {'chroma (local)' if USE_RAG else 'plain text'}")
     print(f"corpus:         {get_corpus_summary()}")
     print()
 

@@ -27,9 +27,9 @@ OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY", "")
 # 3.4s per call, 1M context. Best speed/quality/cost for autonomous loop.
 GENERATOR_MODEL = os.getenv("OSIP_GENERATOR_MODEL", "google/gemini-3.1-flash-lite-preview")
 
-# Scorer model (LLM-as-judge — consistency + cheap)
-# Same model works well for scoring: fast, consistent JSON output
-SCORER_MODEL = os.getenv("OSIP_SCORER_MODEL", "google/gemini-3.1-flash-lite-preview")
+# Scorer model (LLM-as-judge — use different model to avoid self-reinforcement)
+# DeepSeek V3.2: strong reasoning, $0.25/$0.40 per M tokens
+SCORER_MODEL = os.getenv("OSIP_SCORER_MODEL", "deepseek/deepseek-v3.2")
 
 # Premium model (for final polished proposals after pipeline is optimized)
 # Gemini 3 Flash: #8 LM Arena (ELO 1473), $0.50/$3.00 per M tokens

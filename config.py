@@ -15,27 +15,40 @@ CORPUS_DIR = PROJECT_ROOT / "corpus"
 OUTPUTS_DIR = PROJECT_ROOT / "outputs"
 TEMPLATES_DIR = PROJECT_ROOT / "templates"
 RESULTS_FILE = PROJECT_ROOT / "results.tsv"
+CHROMA_DIR = PROJECT_ROOT / ".chromadb"  # local vector store
 
-# --- LLM Settings ---
-# Default model for generation agents
-GENERATOR_MODEL = os.getenv("OSIP_GENERATOR_MODEL", "claude-sonnet-4-20250514")
-# Model for scoring/evaluation (cheaper, faster)
-SCORER_MODEL = os.getenv("OSIP_SCORER_MODEL", "claude-haiku-4-5-20251001")
-# API provider: "anthropic" or "openai"
-API_PROVIDER = os.getenv("OSIP_API_PROVIDER", "anthropic")
+# --- LLM Settings (OpenRouter) ---
+# OpenRouter base URL (OpenAI-compatible)
+OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY", "")
+
+# Generator model (proposal writing — needs to be smart)
+GENERATOR_MODEL = os.getenv("OSIP_GENERATOR_MODEL", "anthropic/claude-sonnet-4.6")
+# Scorer model (LLM-as-judge — needs consistency, can be cheaper)
+SCORER_MODEL = os.getenv("OSIP_SCORER_MODEL", "deepseek/deepseek-v3.2")
+
+# --- Embedding Settings ---
+# "huggingface" (free, local) or "openai" (paid, needs OPENAI_API_KEY)
+EMBEDDING_PROVIDER = os.getenv("OSIP_EMBEDDING_PROVIDER", "huggingface")
+EMBEDDING_MODEL = os.getenv("OSIP_EMBEDDING_MODEL", "BAAI/bge-small-en-v1.5")
+EMBEDDING_DIM = int(os.getenv("OSIP_EMBEDDING_DIM", "384"))  # 384 for bge-small, 1536 for OpenAI
+
+# --- RAG Settings ---
+# Vector store: "chroma" (local, default) or "supabase" (cloud)
+VECTOR_STORE = os.getenv("OSIP_VECTOR_STORE", "chroma")
+SUPABASE_DB_URL = os.getenv("SUPABASE_DB_URL", "")
+CHROMA_COLLECTION = os.getenv("OSIP_CHROMA_COLLECTION", "osip_corpus")
+RAG_TOP_K = int(os.getenv("OSIP_RAG_TOP_K", "8"))
+# Whether RAG is available
+USE_RAG = VECTOR_STORE == "chroma" or (VECTOR_STORE == "supabase" and SUPABASE_DB_URL != "")
 
 # --- Generation Constraints ---
-# Max tokens per agent call
 MAX_TOKENS_PER_CALL = 4096
-# Max total tokens per experiment (cost control)
 MAX_TOKENS_PER_EXPERIMENT = 100_000
-# Default temperature for generation
 DEFAULT_TEMPERATURE = 0.7
-# Default temperature for scoring (low = deterministic)
 SCORER_TEMPERATURE = 0.1
 
 # --- Scoring Weights ---
-# These define the maximum points per dimension (total = 100)
 SCORE_WEIGHTS = {
     "alignment": 25,
     "structure": 25,
@@ -44,10 +57,8 @@ SCORE_WEIGHTS = {
 }
 
 # --- OSIP Proposal Constraints ---
-# Target word count range for proposals
 MIN_WORDS = 800
 MAX_WORDS = 2000
-# Required sections in a valid proposal
 REQUIRED_SECTIONS = [
     "Title",
     "Problem Statement",
@@ -59,12 +70,6 @@ REQUIRED_SECTIONS = [
     "Budget Estimate",
 ]
 
-# --- RAG Settings ---
-# Whether to use RAG (Supabase + LlamaIndex) or plain text corpus
-USE_RAG = os.getenv("SUPABASE_DB_URL", "") != ""
-
 # --- Experiment Settings ---
-# Timeout per experiment in seconds
-EXPERIMENT_TIMEOUT = 300  # 5 minutes, matching autoresearch
-# Number of proposals to generate per experiment for averaging
-PROPOSALS_PER_EXPERIMENT = 1  # increase for more stable scores (costs more)
+EXPERIMENT_TIMEOUT = 300
+PROPOSALS_PER_EXPERIMENT = 1

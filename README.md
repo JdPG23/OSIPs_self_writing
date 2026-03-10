@@ -75,22 +75,53 @@ temperature, context selection, output format, few-shot examples, etc.
 ## Quick Start
 
 ```bash
-# 1. Clone and install
-git clone <this-repo>
+# 1. Clone and checkout experiment branch
+git clone https://github.com/JdPG23/OSIPs_self_writing.git
 cd OSIPs_self_writing
+git checkout osip-research/mar10    # latest experiment branch
+
+# 2. Create Python virtual environment
+python -m venv .venv
+source .venv/Scripts/activate       # Windows (Git Bash)
+# source .venv/bin/activate         # Linux/Mac
+
+# 3. Install dependencies
 pip install -r requirements.txt
 
-# 2. Configure API key
+# 4. Configure API key (OpenRouter — single key for all models)
 cp .env.example .env
-# Edit .env → add your ANTHROPIC_API_KEY
+# Edit .env → add your OPENROUTER_API_KEY (get one at https://openrouter.ai)
 
-# 3. Run one experiment
+# 5. Build local vector store (ChromaDB, first time only, ~2 min)
+python scripts/ingest.py
+python scripts/ingest.py --test-query "debris removal"   # verify RAG works
+python scripts/ingest.py --stats                          # check doc counts
+
+# 6. Run one experiment
 python run.py --topic "Autonomous collision avoidance for debris removal"
+python run.py --topic "Topic" --quick      # faster scoring (single LLM call)
+python run.py --topic "Topic" --premium    # Gemini 3 Flash (higher quality)
 
-# 4. Start autonomous research loop
+# 7. Start autonomous research loop (via Claude Code)
 # Point Claude Code at this repo, then:
 # "Read program.md and kick off a new experiment run"
 ```
+
+## Continuing on Another Machine
+
+If you cloned this repo on a new PC:
+
+```bash
+git checkout osip-research/mar10
+python -m venv .venv && source .venv/Scripts/activate
+pip install -r requirements.txt
+cp .env.example .env           # add your OPENROUTER_API_KEY
+python scripts/ingest.py       # rebuild ChromaDB (~2 min, corpus is in git)
+```
+
+Everything else is already in git: `results.tsv` (experiment log), `outputs/` (proposals),
+`.claude/MEMORY.md` (session memory), `CLAUDE.md` (project intelligence).
+The only things to rebuild locally are `.venv/` and `.chromadb/`.
 
 ## Project Structure
 
@@ -101,16 +132,22 @@ python run.py --topic "Autonomous collision avoidance for debris removal"
 ├── run.py                  # Experiment runner
 ├── scorer.py               # Fixed scoring harness (don't touch)
 ├── prepare.py              # Fixed utilities (don't touch)
-├── llm_client.py           # Anthropic/OpenAI client
-├── config.py               # Constants
+├── llm_client.py           # OpenRouter client (OpenAI-compatible)
+├── rag.py                  # LlamaIndex + ChromaDB RAG module
+├── config.py               # Constants and model selection
+├── .claude/MEMORY.md       # Claude Code session memory
 ├── corpus/
-│   ├── esa_priorities.md   # ESA strategic priorities 2025-2030
+│   ├── esa_priorities.md   # ESA strategic priorities + GSTP 2026-2028
+│   ├── osip_campaigns.md   # Active ESA campaigns and channels
+│   ├── domain_themes.md    # Thematic analysis of 336 OSIPs
 │   ├── rejection_patterns.md
-│   └── references/         # Example approved OSIPs (.md/.json)
-├── templates/
-│   └── osip_template.md    # Reference structure
-├── outputs/                # Generated proposals
-└── results.tsv             # Experiment log (untracked)
+│   └── references/         # 336 approved OSIPs (.json + .md)
+├── scripts/
+│   ├── ingest.py           # Corpus → ChromaDB ingestion
+│   ├── analyze_results.py  # Results analysis and reporting
+│   └── scrape_osips.py     # ESA OSIP scraper
+├── outputs/                # Generated proposals (YAML frontmatter)
+└── results.tsv             # Experiment log (tab-separated)
 ```
 
 ## Populating the Corpus
@@ -129,9 +166,11 @@ The system improves faster with better reference data:
   each experiment has bounded cost. The pipeline improves within that budget.
 - **Single file to modify**: The agent only touches `pipeline.py`. Clean diffs,
   easy rollback, reviewable experiments.
-- **LLM-as-judge**: The scorer uses a separate (cheaper) model to evaluate,
-  avoiding self-reinforcing loops.
+- **LLM-as-judge**: The scorer uses a different model (DeepSeek V3.2) from
+  the generator (Gemini Flash Lite) to avoid self-reinforcing score inflation.
 - **Sleep-compatible**: Start it, go to bed, review results in the morning.
+- **Cost-efficient**: Uses OpenRouter with cheap models (~$0.25/M tokens) for
+  the autonomous loop. Premium models available via `--premium` flag.
 
 ## Adapting to Other Domains
 

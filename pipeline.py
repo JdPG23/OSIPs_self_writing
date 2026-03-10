@@ -36,7 +36,7 @@ USE_FULL_PRIORITIES = True
 AGENT_TEMPERATURES = {
     "context": None,
     "ideation": 0.9,      # higher creativity for brainstorming
-    "writer": 0.5,        # lower temp for more precise technical writing
+    "writer": 0.7,        # balanced for technical writing
     "critic": 0.3,        # low temp for consistent critique
     "reviser": 0.5,       # moderate for targeted edits
 }

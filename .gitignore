@@ -10,8 +10,8 @@ __pycache__/
 # Outputs (generated proposals — keep in git optionally)
 # outputs/
 
-# Results log (untracked, like autoresearch)
-results.tsv
+# Results log (tracked for experiment continuity across machines)
+# results.tsv
 
 # Experiment logs
 run.log

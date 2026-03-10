@@ -1,0 +1,10 @@
+commit	score	alignment	structure	quality	novelty	tokens	status	description
+122b3ed	86.0	22.0	23.0	21.0	20.0	19163	keep	baseline - Gemini Flash Lite, default pipeline
+7134ee4	86.0	22.0	23.0	21.0	20.0	18836	discard	add quality markers and specificity rules to Writer
+99a10c5	79.0	18.0	22.0	20.0	19.0	19015	discard	inject funded OSIPs into Writer for differentiation
+4f64e59	86.0	22.0	23.0	21.0	20.0	27113	discard	2 revision rounds (same score +8K tokens)
+c3296ec	84.0	22.0	23.0	20.0	19.0	19637	discard	restructure Context Agent 5 mandatory sections
+eac2c9e	79.0	18.0	22.0	20.0	19.0	19447	discard	5 ideation angles (too dispersed)
+5a6d6c0	77.0	19.0	21.0	20.0	17.0	19245	keep	DeepSeek scorer + Writer temp 0.5 (new baseline with stricter scorer)
+87538b0	80.0	19.0	22.0	21.0	18.0	19513	keep	restore Writer temp 0.7 (+3 vs DeepSeek baseline)
+83f2f10	82.0	19.0	21.0	20.0	22.0	19553	keep	reinforce Critic on novelty (novelty 18->22 +4pts!)

@@ -12,54 +12,82 @@ to find the writing pipeline that produces the highest-scoring ESA proposals.
 - Scoring metric: 0-100 across 4 dimensions (alignment, structure, quality, novelty)
 - Each experiment = one proposal generation + scoring cycle
 
-## Commands
+## Setup (from scratch on a new machine)
 ```bash
-# Install dependencies
+# 1. Clone and checkout experiment branch
+git clone https://github.com/JdPG23/OSIPs_self_writing.git
+cd OSIPs_self_writing
+git checkout osip-research/mar10
+
+# 2. Create Python environment
+python -m venv .venv
+source .venv/Scripts/activate   # Windows (Git Bash)
+# source .venv/bin/activate     # Linux/Mac
+
+# 3. Install dependencies
 pip install -r requirements.txt
 
-# Configure environment
-cp .env.example .env   # then fill in API keys + Supabase URL
+# 4. Configure environment
+cp .env.example .env
+# Edit .env → add your OPENROUTER_API_KEY
 
-# Ingest corpus into Supabase (first time / after corpus changes)
+# 5. Ingest corpus into local ChromaDB (first time only, ~2 min)
 python scripts/ingest.py
-python scripts/ingest.py --test-query "debris removal"  # ingest + verify
-python scripts/ingest.py --stats  # check document counts without ingesting
+python scripts/ingest.py --test-query "debris removal"  # verify it works
 
-# Run single experiment
+# 6. Run a single experiment
 python run.py --topic "Your OSIP topic here"
-
-# Run with quick scoring (faster, less accurate)
-python run.py --topic "Topic" --quick
-
-# Check best score so far
-grep -v "^commit" results.tsv | sort -t$'\t' -k2 -rn | head -5
-
-# Analyze all results
-python scripts/analyze_results.py --table
+python run.py --topic "Topic" --quick    # quick scoring (faster)
+python run.py --topic "Topic" --premium  # Gemini 3 Flash (higher quality)
 ```
+
+## Current Models (via OpenRouter)
+- **Generator**: `google/gemini-3.1-flash-lite-preview` — 3.4s/call, $0.25/$1.50/M tokens
+- **Scorer**: `deepseek/deepseek-v3.2` — strict, well-calibrated for scoring
+- **Premium**: `google/gemini-3-flash-preview` — for final polished proposals
+- **Embeddings**: HuggingFace `BAAI/bge-small-en-v1.5` (free, local, 384d)
+- All LLM calls go through OpenRouter (single API key). See `llm_client.py`.
+- Avoid Seed 2.0 Mini — 110s/call due to mandatory reasoning tokens.
 
 ## RAG Architecture
 - **LlamaIndex** orchestrates document loading, chunking, and retrieval
-- **Supabase** (pgvector) stores embeddings for semantic search
-- **OpenAI text-embedding-3-small** generates 1536-dim vectors (or HuggingFace bge-small for free)
-- **Claude** (via Anthropic API) generates and scores proposals
-- Pipeline auto-detects: if SUPABASE_DB_URL is set → RAG mode, otherwise → plain text fallback
+- **ChromaDB** (local, `.chromadb/`) stores embeddings — no cloud needed
+- **HuggingFace bge-small-en-v1.5** generates 384-dim vectors (free, CPU)
+- 365 documents indexed from 336 implemented ESA OSIPs + priorities + campaigns
+- Pipeline auto-detects: if ChromaDB is available → RAG mode, otherwise → plain text fallback
+
+## User's OSIP Topic
+"Integration of MCP (Model Context Protocol) into IENAI Space 360 mission
+analysis software for AI-driven automated mission planning, manoeuvre
+optimization, and end-to-end mission design automation from Phase 0 to Phase D"
+
+## Experiment Progress (branch: osip-research/mar10)
+- Baseline (DeepSeek scorer): 77/100
+- **Best so far: 82/100** (alignment:19, structure:21, quality:20, novelty:22)
+- Key findings:
+  - Reinforcing Critic on novelty → +4pts novelty (18→22)
+  - 2 revision rounds = same score + more tokens (not worth it)
+  - 5 ideation angles = worse than 3 (too dispersed)
+  - Writer temp 0.7 > 0.5 (+3pts)
+- Weakest dimensions: **alignment (19/25)** and **quality (20/25)**
+- Next experiments to try: few-shot examples, ESA Alignment Checker agent,
+  structured XML output, chain-of-thought, domain glossary injection
 
 ## Branching Convention
-- `main` — stable baseline
+- `master` — stable baseline
 - `osip-research/<tag>` — experiment branches (e.g. `osip-research/mar10`)
-- Never commit `results.tsv` — it's the experiment log, kept local
+- `results.tsv` tracks all experiment results (tab-separated)
 
 ## Code Style
 - Python 3.10+, no type: ignore hacks
-- Minimal dependencies (only anthropic + openai SDKs)
 - f-strings, pathlib over os.path
 
 ## Key Directories
 - `corpus/` — reference data (ESA priorities, example OSIPs, rejection patterns)
-- `corpus/references/` — approved OSIP examples as .md or .json
-- `outputs/` — generated proposals with metadata headers
-- `templates/` — structural references
+- `corpus/references/` — 336 approved OSIP examples as .md or .json
+- `outputs/` — generated proposals with YAML frontmatter metadata
+- `.claude/MEMORY.md` — Claude Code session memory for continuity
+- `.chromadb/` — local vector store (gitignored, rebuild with `scripts/ingest.py`)
 
 ## When Experimenting on pipeline.py
 1. Always establish baseline first (run unmodified pipeline.py)

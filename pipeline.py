@@ -115,7 +115,10 @@ Evaluate against these criteria:
 1. ALIGNMENT: Does it clearly connect to specific ESA programs?
 2. STRUCTURE: Are all required sections present and complete?
 3. QUALITY: Is the writing precise and free of filler?
-4. NOVELTY: Is the innovation clearly differentiated?
+4. NOVELTY (MOST IMPORTANT): Is the innovation clearly differentiated from
+   existing funded work? Does the Innovation & Novelty section name specific
+   prior art and state what is NEW? Vague novelty claims are the #1 reason
+   ESA rejects OSIPs.
 5. FEASIBILITY: Is the scope realistic for OSIP budget/timeline?
 6. SPECIFICITY: Are claims quantified? Are references concrete?
 
@@ -123,6 +126,10 @@ For each weakness found, provide:
 - The specific text that's problematic
 - Why it's a weakness
 - A concrete suggestion for improvement
+
+Pay EXTRA attention to novelty. If the proposal doesn't explicitly name
+a competing approach and explain why this one is better, flag it as a
+critical weakness.
 
 Be ruthless but constructive. The goal is to improve the proposal."""
 

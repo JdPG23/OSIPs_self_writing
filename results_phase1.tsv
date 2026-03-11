@@ -1,0 +1,11 @@
+run	pitch_score	pitch_novelty	pitch_concise	pitch_words	tokens	status	description
+1	38	19	19	211	31712	baseline	initial pitch prompt (generic distillation from proposal)
+2	36	18	18	219	22179	discard	add competitor naming instruction (too vague)
+3	39	21	18	204	21563	keep	specific competitor naming with examples (GMAT, OCDT, FMI)
+4	39	21	18	199	21385	neutral	force shorter sentences (no improvement)
+5	37	19	18	178	21927	discard	"elevator pitch" style (lost technical depth → novelty dropped)
+6	39	21	18	203	22210	neutral	pitch temp 0.3 (stable, no change)
+7	39	21	18	152	22039	discard	+ polisher revision step (extra cost, no improvement)
+8	37	21	16	144	21055	discard	few-shot exemplar + 150 word limit (over-compressed, conciseness dropped)
+9	38	21	17	184	21380	discard	premium model (Gemini Flash) for pitch only (worse conciseness)
+10	41	22	19	194	21739	keep	reinforce "fundamental limitation" language in differentiation → best so far

@@ -33,6 +33,18 @@ class ProposalScore:
         return asdict(self)
 
 
+@dataclass
+class PitchScore:
+    novelty: float = 0.0        # Innovation communication (0-25)
+    conciseness: float = 0.0    # Persuasive brevity (0-25)
+    overall: float = 0.0        # Sum (0-50)
+    feedback: str = ""
+    tokens_used: int = 0
+
+    def to_dict(self) -> dict:
+        return asdict(self)
+
+
 # ---------------------------------------------------------------------------
 # Scoring Rubrics (injected into LLM-as-judge prompts)
 # ---------------------------------------------------------------------------
@@ -107,6 +119,47 @@ Green flags (add points for):
 - References to published work (papers, standards)
 - Clear technical trade-off analysis
 - Concrete comparison with state-of-the-art
+"""
+
+PITCH_NOVELTY_RUBRIC = """
+Score the Phase 1 pitch's innovation/novelty communication on 0-25.
+
+This is the SOLE criterion ESA uses at Phase 1 screening. The pitch must
+make the reviewer immediately understand what is genuinely new.
+
+Scoring guide:
+- 0-5:   No clear innovation stated; describes known approaches
+- 6-10:  Innovation mentioned but vague or buried in context
+- 11-15: Innovation is stated but not differentiated from prior art
+- 16-20: Clear innovation with specific differentiation from existing work
+- 21-25: Immediately compelling novelty — the reader instantly sees what's
+         new, why it matters, and why existing approaches can't do this.
+         Names specific prior art and clearly surpasses it.
+
+Key checks:
+- Is the novelty in the FIRST sentence or paragraph? (it should be)
+- Does it name a specific competing approach/project?
+- Does it explain the technical mechanism of the innovation?
+- Would a non-specialist evaluator understand what's new?
+"""
+
+PITCH_CONCISENESS_RUBRIC = """
+Score the pitch's conciseness and persuasiveness on 0-25.
+
+Scoring guide:
+- 0-5:   Rambling, unfocused, too long or too short
+- 6-10:  Some structure but contains filler or unnecessary detail
+- 11-15: Reasonably focused but could be tighter
+- 16-20: Dense, every sentence contributes, good flow
+- 21-25: Perfectly calibrated — reads like a polished elevator pitch,
+         no word is wasted, compelling from first to last sentence
+
+Red flags:
+- Budget or timeline details (save for Phase 2)
+- TRL numbers (too technical for Phase 1)
+- Bullet points or headers (this should be prose)
+- More than 300 words
+- Generic statements that could apply to any proposal
 """
 
 NOVELTY_RUBRIC = """
@@ -282,5 +335,44 @@ Score this OSIP proposal. Return JSON only."""
             result.feedback = data.get("feedback", "")
     except (json.JSONDecodeError, ValueError):
         result.feedback = f"Parse error: {response[:200]}"
+
+    return result
+
+
+# ---------------------------------------------------------------------------
+# Phase 1 Pitch Scoring
+# ---------------------------------------------------------------------------
+
+def score_pitch(
+    pitch: str,
+    esa_priorities: str = "",
+) -> PitchScore:
+    """Score a Phase 1 pitch on novelty communication and conciseness.
+
+    Returns a PitchScore with breakdown (0-50 total).
+    """
+    result = PitchScore()
+    total_tokens = 0
+    feedback_parts = []
+
+    dimensions = [
+        ("novelty", PITCH_NOVELTY_RUBRIC),
+        ("conciseness", PITCH_CONCISENESS_RUBRIC),
+    ]
+
+    for dim_name, rubric in dimensions:
+        score, feedback, tokens = _score_dimension(
+            proposal=pitch,
+            dimension=dim_name,
+            rubric=rubric,
+            esa_priorities=esa_priorities,
+        )
+        setattr(result, dim_name, score)
+        total_tokens += tokens
+        feedback_parts.append(f"**{dim_name}** ({score:.1f}/25): {feedback}")
+
+    result.overall = result.novelty + result.conciseness
+    result.feedback = "\n\n".join(feedback_parts)
+    result.tokens_used = total_tokens
 
     return result

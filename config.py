@@ -64,7 +64,7 @@ SCORE_WEIGHTS = {
     "novelty": 25,
 }
 
-# --- OSIP Proposal Constraints ---
+# --- OSIP Phase 2 Proposal Constraints ---
 MIN_WORDS = 800
 MAX_WORDS = 2000
 REQUIRED_SECTIONS = [
@@ -77,6 +77,10 @@ REQUIRED_SECTIONS = [
     "Expected Outcomes",
     "Budget Estimate",
 ]
+
+# --- OSIP Phase 1 Pitch Constraints ---
+PITCH_MIN_WORDS = 100
+PITCH_MAX_WORDS = 350
 
 # --- Experiment Settings ---
 EXPERIMENT_TIMEOUT = 300

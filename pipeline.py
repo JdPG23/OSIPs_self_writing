@@ -11,6 +11,7 @@ Current architecture:
 
 from config import (
     GENERATOR_MODEL,
+    PREMIUM_MODEL,
     DEFAULT_TEMPERATURE,
     MAX_TOKENS_PER_CALL,
     USE_RAG,
@@ -39,6 +40,7 @@ AGENT_TEMPERATURES = {
     "writer": 0.7,        # balanced for technical writing
     "critic": 0.3,        # low temp for consistent critique
     "reviser": 0.5,       # moderate for targeted edits
+    "pitch": 0.3,         # low for precise distillation
 }
 
 # Max reference OSIPs to include in context (plain text fallback)
@@ -145,6 +147,36 @@ Rules:
 
 Output the complete revised proposal (not a diff)."""
 
+PITCH_AGENT_SYSTEM = """You are an ESA OSIP idea submission specialist. Your job is
+to distill a full technical proposal into a compelling 2-paragraph pitch for the
+ideas.esa.int submission form.
+
+CRITICAL CONTEXT: At Phase 1, ESA evaluates ideas on ONE criterion only:
+INNOVATION POTENTIAL. Your pitch must make the novelty immediately obvious.
+
+STRUCTURE (follow exactly):
+- Paragraph 1 (the hook): The VERY FIRST SENTENCE must state what is new.
+  Do not start with the problem — start with the innovation itself.
+  Example opening: "We propose X, the first Y that enables Z." Then explain
+  the technical mechanism in 2-3 concise sentences.
+- Paragraph 2 (differentiation + ESA fit): You MUST name a SPECIFIC existing
+  tool, project, or product (not just a standard) and explain both:
+  (a) what it CANNOT do (a fundamental limitation, not just "it's slower")
+  (b) what YOUR approach enables that is IMPOSSIBLE with the existing one.
+  Use language like "fundamentally cannot", "architecturally unable to",
+  "there is no mechanism for". End with one sentence naming a specific ESA
+  programme this supports.
+
+WRITING STYLE:
+- Maximum 200 words total, exactly 2 paragraphs
+- Mix short punchy sentences (8-12 words) with one or two longer technical
+  ones. Vary the rhythm — do NOT make every sentence the same length.
+- NO section headers, NO bullet points, NO tables — plain prose only
+- NO budget, NO timeline, NO TRL numbers — save those for Phase 2
+- Write to persuade, not to inform. This is a pitch, not an abstract.
+
+Output ONLY the 2 paragraphs. Nothing else."""
+
 
 # ---------------------------------------------------------------------------
 # Pipeline Execution
@@ -202,14 +234,14 @@ def _build_context_plain(topic: str) -> tuple[str, str, str]:
     return priorities, reference_text, ""
 
 
-def run_pipeline(topic: str) -> tuple[str, int]:
+def run_pipeline(topic: str) -> tuple[str, str, int]:
     """Execute the full proposal writing pipeline.
 
     Args:
         topic: The OSIP topic/domain to write about.
 
     Returns:
-        (proposal_text, total_tokens_used)
+        (proposal_text, pitch_text, total_tokens_used)
     """
     total_tokens = 0
 
@@ -328,4 +360,25 @@ Revise the proposal addressing all feedback. Output the complete revised proposa
         )
         total_tokens += tokens
 
-    return proposal, total_tokens
+    # --- Step 6: Pitch Distiller (Phase 1 output) ---
+    pitch_prompt = f"""## Full OSIP Proposal (already reviewed and refined)
+
+{proposal}
+
+## Context
+Topic: {topic}
+
+Distill this into a 2-paragraph pitch (max 200 words) for the ESA ideas.esa.int
+submission form. Focus entirely on innovation and novelty — that is the ONLY
+criterion at Phase 1 screening."""
+
+    pitch, tokens = call_llm(
+        system_prompt=PITCH_AGENT_SYSTEM,
+        user_prompt=pitch_prompt,
+        model=GENERATOR_MODEL,
+        temperature=_get_temp("pitch"),
+        max_tokens=1024,
+    )
+    total_tokens += tokens
+
+    return proposal, pitch, total_tokens

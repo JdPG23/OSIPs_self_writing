@@ -21,6 +21,8 @@ from config import (
     REQUIRED_SECTIONS,
     MIN_WORDS,
     MAX_WORDS,
+    PITCH_MIN_WORDS,
+    PITCH_MAX_WORDS,
 )
 
 
@@ -151,6 +153,43 @@ def validate_proposal(proposal_text: str) -> dict:
     return result
 
 
+def validate_pitch(pitch_text: str) -> dict:
+    """Validate that a pitch meets Phase 1 structural requirements.
+
+    Returns dict:
+        - 'valid': bool
+        - 'word_count': int
+        - 'paragraph_count': int
+        - 'errors': list[str]
+    """
+    result = {
+        "valid": True,
+        "word_count": 0,
+        "paragraph_count": 0,
+        "errors": [],
+    }
+
+    words = pitch_text.split()
+    result["word_count"] = len(words)
+
+    if len(words) < PITCH_MIN_WORDS:
+        result["errors"].append(f"Too short: {len(words)} words (min {PITCH_MIN_WORDS})")
+        result["valid"] = False
+    if len(words) > PITCH_MAX_WORDS:
+        result["errors"].append(f"Too long: {len(words)} words (max {PITCH_MAX_WORDS})")
+        result["valid"] = False
+
+    paragraphs = [p.strip() for p in pitch_text.split("\n\n") if p.strip()]
+    result["paragraph_count"] = len(paragraphs)
+    if len(paragraphs) != 2:
+        result["errors"].append(f"Expected 2 paragraphs, found {len(paragraphs)}")
+
+    if "##" in pitch_text or "**" in pitch_text:
+        result["errors"].append("Contains markdown formatting — Phase 1 is plain prose")
+
+    return result
+
+
 # ---------------------------------------------------------------------------
 # Results Logging
 # ---------------------------------------------------------------------------
@@ -189,8 +228,10 @@ def save_proposal(
     topic: str,
     experiment_id: str,
     scores: Optional[dict] = None,
+    pitch_text: Optional[str] = None,
+    pitch_scores: Optional[dict] = None,
 ) -> Path:
-    """Save a generated proposal to the outputs directory."""
+    """Save a generated proposal (and optional pitch) to the outputs directory."""
     OUTPUTS_DIR.mkdir(parents=True, exist_ok=True)
 
     timestamp = time.strftime("%Y%m%d_%H%M%S")
@@ -202,9 +243,19 @@ def save_proposal(
     if scores:
         for k, v in scores.items():
             header += f"{k}: {v}\n"
+    if pitch_scores:
+        for k, v in pitch_scores.items():
+            header += f"pitch_{k}: {v}\n"
     header += f"generated: {time.strftime('%Y-%m-%d %H:%M:%S')}\n---\n\n"
 
-    filepath.write_text(header + proposal_text, encoding="utf-8")
+    body = ""
+    if pitch_text:
+        body += "# Phase 1 Pitch (ideas.esa.int)\n\n"
+        body += pitch_text + "\n\n---\n\n"
+        body += "# Phase 2 Proposal\n\n"
+    body += proposal_text
+
+    filepath.write_text(header + body, encoding="utf-8")
     return filepath
 
 
